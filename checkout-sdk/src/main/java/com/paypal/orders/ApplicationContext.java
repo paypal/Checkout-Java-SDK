@@ -1,8 +1,8 @@
-// This class was generated on Tue, 04 Sep 2018 12:15:14 PDT by version 0.1.0-dev+904328-dirty of Braintree SDK Generator
+// This class was generated on Tue, 04 Dec 2018 17:38:27 PST by version 0.1.0-dev+904328-dirty of Braintree SDK Generator
 // ApplicationContext.java
 // @version 0.1.0-dev+904328-dirty
 // @type object
-// @data H4sIAAAAAAAC/8RXX28bRRB/51OMjhci+XxpUoLqt6rlAQFtFAovobIme+O7Vde7y8xu3Cviu6Pd811yPgOVMOHJuvm385v//r1413kqVsVL741WGLSz8MrZQB9DsSh+QdZ4Z+gNbpNQsSi+p+7h4zWJYu2TUrEqXkUJbqs/kUBoCTx2xEAfPbEmqwjqyNo2mYfes7tHA56dIhHYOB6UtmQD7HRo4Rq7azTLYlG8ZMau9/R8UdwQ1m+t6YrVBo1QIvwWNVM9Eq7ZeeKgSYrV7YhRQnJgDuuO0dZrmz4eA5yQp1DftQQG78hAaDGAuydmXe+B30XRNoFKqqBtJvZYAJVy0QZwE6roQP8Wpo3G/LH4R6wKrSKzjmwmWCfkOdafb36AXUtM2WuVE00MWoCp1kwqUA24CcRTgd6sPE7tE+E0aGttm7XHZprVA8Yca+g8gdvAXhCSIAQH0rrdkbzl0n0A3JL64OKToXQKzQG+gTRHdmvQNjHDweb9V20IXlZVFZwzstQUNkvHTdWGranulH/+zZdCKqmXF2djg44mtIVdq1WbQpPf1J/66iBmxyWTwVQUveeyAImqBRTYkgg2JAvQIjH9oq1BYtOQ5CrKT8oSci6wSUW2xZog+pSV9MLtdz+9havLF+XFgzvK1fQAabfbLY1Ty8bdVxLQ1si1VFpc1qp866uksDZawtK3/myRDbscLTT5hfLZ1y8unkMfxGnEkvlodTKRQ6bFZeFsNNmUZYriWY9tcLm8fHZ1BWh8i+UF5DnA3d7xqnZKKm0DNZyHcNW3VcUkodrLlklWqrMTF9f1fub+SKF19bzI9o273g78h2KbseZFN7ZGCsWWWLVowzjnPdOGOK0H+e/nfNpItO6fTFYOkBzw5lAG78tRbMQhLvIJMHxm2+fVuhYyefDOcExYf52RcpAaUfRpHIbcmKyTraf3n4ctl1RwH8geLbaBM0eW+odT/yqjyYayIUucx1DWeaLsMIXIdrZiJ+TTrdj+lKL/Y8dKq73Pu3Ts4gni4/w59EHu0TRY/RrPzy9VNPmX+i+j+6/XWrzBroc8KmNdc7q6gpsEaNnrVoPy1NS3NuGRaUiDA9U6JwRoR7NHLra/tXxDKWwqHNjesNtCaqtmvIX3Dzw6j/dpLA/P5CfKaxTidb+HJ/mc0g+Of2c3uolMAgh9JCSws00fjfSXQtu4j1H1mAWOjyhcYwdv3O6Y/HBjwca43Ynm0hd/AgAA//8=
+// @data H4sIAAAAAAAC/8RX3Y8bNRB/568YLS+clGTbaylq3qqWBwRto6PwclTRxDvZtc6xfTP2pSnif0f2fuQ2G6ASx/GSaOfL/s23fy8+HDwVy+KV90YrDNpZeO1soE+hmBW/ImvcGHqHuyRUzIof6XD8eEOiWPukVCyL11GC2+nPJBAaAo8HYqBPnliTVQRVZG3rzEPv2d2hAc9OkQhsHfdKO7IB9jo0sMLDCs3it/jkyTO1MU7d3EYXKH+3v0oCO1u3lHcu0LIll/fpsEIOllgAbQVvkW8oeIOKBHa6bgI0eEfQKipXdfY3jLZaW9x1J5VHVrZzKi+N9l7beu2ZtsQJ8VRRObvVdWSqem/49m6ASrloAwiF6CE0mHxgDLg7YtYVZe8w3UaSAHdoIknnmPLUM8WseMWMhzayT2bFFWH13ppDsdyiEUqE26iZqoGwYueJgyYpltdDTkhIV5ymwdE1o4QYkcep8aEhMLgh0yLrQbWJsomibUqCpAraZmIb+8EtbkQVHWjxL2HaaMwfs3/EqtAqMuvIZoR1RJ5i/eXqJ9g3xG3YVC4MYtACTJVmUoEqwG0gHgu0ZuV+KTwSToO2ytmL9TiqJ4wp1nDwBG4LnSAkQQgOpHH7M3HLpX4E3JC6cfHRUDqF5gRfT5oiuzZo65jhYP3xmyYEL8uyDM4ZWWgK24XjumzCzpQb5Z9/97WQSurzy4uhoQ0mtIV9o1WTXJPP1J/b7CBmx3Mmgykp2pvLDCSqBlBgRyJYk8xAi8T0n7qPxLomyVmUj5QF5FhgnZJshxVB9Ckq6YTrH35+Dy+evZxfHq+TmtIR0n6/XxinFrW7KyWgrZArKbW4rFX6xucutjZawsI3/mKWDbvsLTT5hPnTb19ePofWiWOPJfPR6mQiu0yLy8LZaLIpi+TFixZbf+X5s6cvXgAa3+D8EnIf4EN38bJySkptA9Wch1bZllXJJKHsZOdJVsqLB06uVTej3lJoXDVNsq5w17uef0y2CWuadENpJFfsiFWDNgxz8ThcZPGf9/k0wambZ8nKCZIT3hRKf/v5IDbgEBf5ATB8YdnnVWQtZHLjneAYsf46IvNeakDRhrFvckOwHmw8ffwybDmlgrshezbZes4UWaofTvWrjCYb5jVZ4tyGss4jRYcpRLaTETsiP9yIbVdP+j9m7JkVcYT4PH8KvZe71w26vTea+8ux0e3XGy3e4KGFPChjVXHauoIbOajfKnvlsanvbcIjY5cGB6pxTtJiPJg9s7H9reUrSm5T4cT2lt0OUlnVw9uhO+Dec6IL4/z0WXH+xLL30uNEPQrxup3So2iP6SdPqf6dIIAwfemkB5q2kc49dhyfUVjhAd65/Tn5fgODrXH7B+paX/0JAAD//w==
 // DO NOT EDIT
 package com.paypal.orders;
 
@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.ArrayList;
 import com.braintreepayments.http.annotations.*;
 /**
- * Customizes the payer experience during the approval process for the payment with PayPal.
+ * Customizes the payer experience during the approval process for the payment with PayPal.<blockquote><strong>Note:</strong> Partners and Marketplaces might have <code>brand_name</code> and <code>shipping_preference</code> configured during partner account setup that will override the request values.</blockquote>
  */
 @Model
 public class ApplicationContext {
@@ -112,7 +112,7 @@ public class ApplicationContext {
 	}
 
 	/**
-	* The shipping preference:<ul><li>Displays the shipping address to the customer.</li><li>Enables the customer to choose an address on the PayPal site.</li><li>Restricts the customer from changing the address during the payment-approval process.
+	* The shipping preference:<ul><li>Displays the shipping address to the customer.</li><li>Enables the customer to choose an address on the PayPal site.</li><li>Restricts the customer from changing the address during the payment-approval process.</li></ul>
 	*/
 	@SerializedName("shipping_preference")
 	private String shippingPreference;

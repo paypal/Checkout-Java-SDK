@@ -9,9 +9,6 @@ This is a part of the next major PayPal SDK. It includes a simplified interface 
 ## Please Note
 > **The Payment Card Industry (PCI) Council has [mandated](http://blog.pcisecuritystandards.org/migrating-from-ssl-and-early-tls) that early versions of TLS be retired from service.  All organizations that handle credit card information are required to comply with this standard. As part of this obligation, PayPal is updating its services to require TLS 1.2 for all HTTPS connections. At this time, PayPal will also require HTTP/1.1 for all connections. [Click here](https://github.com/paypal/tls-update) for more information. Connections to the sandbox environment use only TLS 1.2.**
 
-## Direct Credit Card Support
-> **Important: The PayPal REST API no longer supports new direct credit card integrations.**  Please instead consider [Braintree Direct](https://www.braintreepayments.com/products/braintree-direct); which is, PayPal's preferred integration solution for accepting direct credit card payments in your mobile app or website. Braintree, a PayPal service, is the easiest way to accept credit cards, PayPal, and many other payment methods.
-
 ## Prerequisites
 
 Java JDK 6 or higher
@@ -43,76 +40,91 @@ public class Credentials {
 This will create an order and print order id for the created order
 
 ```java
+
+import java.io.IOException;
+import java.util.*;
+
+import com.braintreepayments.http.HttpResponse;
+import com.braintreepayments.http.exceptions.HttpException;
+import com.paypal.PayPalClient;
 import com.paypal.orders.*;
 
 public class CreateOrderExample {
-    public static void main(String[] args){
-        
-        // Construct a request object and set desired parameters
-        // Here, OrdersCreateRequest() creates a POST request to /v2/checkout/orders
-        OrdersCreateRequest request = new OrdersCreateRequest()
-                                          .requestBody(new OrderRequest()
-                                              .intent("CAPTURE")
-                                              .purchaseUnits(new ArrayList<PurchaseUnitRequest> () {{
-                                                  add(new Item()
-                                                      .unitAmount(new Money()
-                                                          .currencyCode("USD")
-                                                          .value("100.00")
-                                                      )); 
-                                                  }}
-                                              ));
-        
-        try {
-            // Call API with your client and get a response for your call
-            HttpResponse<Order> response = Credentials.client.execute(request);  
-            
-            // If call returns body in response, you can get the deserialized version by calling result() on the response
-            Order order = response.result();
-            System.out.println("Order ID: ", order.id());
-        } catch (IOException ioe) {
-            if (ioe instanceof HttpException) {
-              // Something went wrong server-side
-            HttpException he = (HttpException) ioe;
-            int statusCode = he.getStatusCode();
-            String debugId = he.getMessage().get("debug_id");
-            } else {
-            // Something went wrong client-side
-            }
-        }
-    }
+	public static void main(String[] args) {
+
+		// Construct a request object and set desired parameters
+		// Here, OrdersCreateRequest() creates a POST request to /v2/checkout/orders
+		List<PurchaseUnitRequest> purchaseUnitRequests = new ArrayList<>();
+		PurchaseUnitRequest purchaseUnitRequest = new PurchaseUnitRequest()
+				.amount(new AmountWithBreakdown().currencyCode("USD").value("220.00"));
+		purchaseUnitRequests.add(purchaseUnitRequest);
+		OrdersCreateRequest request = new OrdersCreateRequest()
+				.requestBody(new OrderRequest()
+						.intent("CAPTURE").applicationContext(new ApplicationContext()
+								.cancelUrl("https://www.example.com").returnUrl("https://www.example.com"))
+						.purchaseUnits(purchaseUnitRequests));
+
+		try {
+			// Call API with your client and get a response for your call
+			HttpResponse<Order> response = Credentials.client.execute(request);
+
+			// If call returns body in response, you can get the deserialized version by
+			// calling result() on the response
+			Order order = response.result();
+			System.out.println("Order ID: " + order.id());
+		} catch (IOException ioe) {
+			if (ioe instanceof HttpException) {
+				// Something went wrong server-side
+				HttpException he = (HttpException) ioe;
+				int statusCode = he.statusCode();
+				String message = he.getMessage();
+			} else {
+				// Something went wrong client-side
+			}
+		}
+	}
 }
 ```
 
 ### Capturing an Order
 This will capture an order
 ```java
+
+import java.io.IOException;
+
+import com.braintreepayments.http.HttpResponse;
+import com.braintreepayments.http.exceptions.HttpException;
+import com.paypal.PayPalClient;
 import com.paypal.orders.*;
 
 public class CaptureOrderExample {
-    public static void main(String[] args){
-        
-        // Construct a request object and set desired parameters
-        // Here, OrdersCaptureRequest() creates a POST request to /v2/checkout/orders
-        // Replace ORDER-ID with the order id from create order
-        OrdersCaptureRequest request = new OrdersCaptureRequest("ORDER-ID");
-        
-        try {
-            // Call API with your client and get a response for your call
-            HttpResponse<Order> response = Credentials.client.execute(request);  
-            
-            // If call returns body in response, you can get the deserialized version by calling result() on the response
-            Order order = response.result();
-        } catch (IOException ioe) {
-            if (ioe instanceof HttpException) {
-              // Something went wrong server-side
-            HttpException he = (HttpException) ioe;
-            int statusCode = he.getStatusCode();
-            String debugId = he.getMessage().get("debug_id");
-            } else {
-            // Something went wrong client-side
-            }
-        }
-    }
+	public static void main(String[] args) {
+
+		// Construct a request object and set desired parameters
+		// Here, OrdersCaptureRequest() creates a POST request to /v2/checkout/orders
+		// Replace ORDER-ID with the order id from create order
+		OrdersCaptureRequest request = new OrdersCaptureRequest("ORDER-ID");
+
+		try {
+			// Call API with your client and get a response for your call
+			HttpResponse<Order> response = new PayPalClient().client().execute(request);
+
+			// If call returns body in response, you can get the deserialized version by
+			// calling result() on the response
+			Order order = response.result();
+			System.out.println(order.status());
+		} catch (IOException ioe) {
+			if (ioe instanceof HttpException) {
+				// Something went wrong server-side
+				HttpException he = (HttpException) ioe;
+				int statusCode = he.statusCode();
+				String message = he.getMessage();
+				System.out.println("Status Code: " + statusCode + " - Message:" + message);
+			} else {
+				// Something went wrong client-side
+			}
+		}
+	}
 }
 ```
 ## Running tests

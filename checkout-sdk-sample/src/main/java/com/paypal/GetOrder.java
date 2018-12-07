@@ -6,7 +6,7 @@ import org.json.JSONObject;
 
 import com.braintreepayments.http.HttpResponse;
 import com.braintreepayments.http.serializer.Json;
-import com.paypal.AuthorizeIntentExamples.CreateOrder;
+import com.paypal.delayedauthorizecapture.CreateOrder;
 import com.paypal.orders.Order;
 import com.paypal.orders.OrdersGetRequest;
 

@@ -1,8 +1,8 @@
-// This class was generated on Tue, 04 Sep 2018 12:15:13 PDT by version 0.1.0-dev+904328-dirty of Braintree SDK Generator
+// This class was generated on Tue, 04 Dec 2018 17:38:27 PST by version 0.1.0-dev+904328-dirty of Braintree SDK Generator
 // AmountBreakdown.java
 // @version 0.1.0-dev+904328-dirty
 // @type object
-// @data H4sIAAAAAAAC/+yYT2vbTBDG7++nGHR6C0qU/oGCb2lCoS1NQhsKJQ3JeHdkLVntqrOjJKLkuxdJliPZLiWQU72nZJ/dmZ15PPph+Vdy3lSUzJLD0tdO4B0T3mh/55I0+YZscG7pBMv2RJImn6h5XBxTUGwqMd4ls+S8IJgPweBzkIIAu6T7j1mhYn9rNAXQJGhsgFCrAjCAeEELRqhcRqVLSfB+pYTCVJVxixQKdNp2/y1MLnDHWKVgXKgZnaIU0GnQJqg2LqRgckDX7CdpcsiMTd/zQZp8IdSnzjbJLEcbqBV+1oZJr4Qz9hWxGArJ7GLl1mfvqNm0aKhqYtVI3LRM1czkVNMV3LcJuWdAyI1Dp0zrAKMLqNqodOUXwhxt2yt4hgqbkpyArun5egzCfdVrTQ4lXymvadLp+s5muxdSMNGeKpBRCTF8+Hq69+bVy7ePRrSxl/9n2quQGSe0YGwTZNowKcmYgmTD4b32cMhegBQoYDQ5Mbmh0A3fcOhJjgjXa4a42tqH9K+u3KKtp24MyqYL3U4Kd4VRBZRmUQjMafajPjh4rWrb/aV+ZU2/OnTQeUHcTceytbZTa24Irj+efb/uTUAmcF5AmsootLaBnPvZQbvfJ82GrGt3gCZlSrSriO13nZ8cj+4K9Vyb9pHWbYUepPB1QKelCNuvy4YO33vuPidemg+uLufELTuGQiqLisLygZhMSAqBCC6OBu2oHYSnjs1zTMblaDb+QIUVlibjMVYjFyIXIhd2jgtC5VX3JWcKhrEcyRDJEMmwa2QY3nMm0zESIxUiFSIVdpUKV8MPG1vxMN6NnIiciJzYNU4I3m95rRirkQuRC5EL/xgXLh/++w0AAP//
+// @data H4sIAAAAAAAC/+yYX2vcOBTF3/dTXPS0C06c3S0U5i1NKLSlSWhDoaQhuSPdiUVkyb2SkpiS715kjyf2zJQSyFNHT4mO/t1z5vrHeH6I87YhMROHtYs2wBsmvFXu3opCfEHWODd0gnVaIQrxgdqnwTF5yboJ2lkxE+cVwXzYDG4BoSLA7tD9p1OhYXenFXlQFFAbDz7KCtBDcAEN6ED1clexlAI+rBRf6abR9qaACq0y3X/a+shoJRWAVoHSXqbFvgC9ALTtvijEITO2vdGDQnwiVKfWtGK2QOMpCd+jZlIr4YxdQxw0eTG7WEX00VlqN3MZSpnkMxI3c5KRmaxsu4J7b7BwDAgLbdFKnWwzWo8y7SpWISHM0SSv4BgabGuyAVSkl/PoA/dVr5kcSr6STtHE6frMpt2LUDHRnqyQUQZiePf5dO/Vf/++fgoi7b38u1RO+lLbQDeM6YBSaSYZSiYfymHxXlrsy38gVBhAK7JBLzT5ruOGRc9KJHBcC8RGYx6L36ZyhyZO0xiUzRS6mQLuKy0rqPVNFWBOs2/x4OB/GU33l/qR0f3o0EKXBXHXHUtryanRtwTX78++XvchIBNYFyC0jZZoTAsL7nsHzX5/aDmcunYHKJK6RrPasf2u85Pj0V0+zpVOz7FKFToIlYserQqV335dOTh867j7nHgZPthYz4kTMIZCGoOS/PKBmHRIAZ4ILo4G7Sg1wnPb5iU643LUG7+gwgpLk/YYq5kLmQuZCzvHhUD1VffNZgqGsZzJkMmQybBrZBhebibdMRIzFTIVMhV2lQpXww8bW/Ewns2cyJzInNg1TgR82PJaMVYzFzIXMhf+MC5cPv71EwAA//8=
 // DO NOT EDIT
 package com.paypal.orders;
 
@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.ArrayList;
 import com.braintreepayments.http.annotations.*;
 /**
- * The breakdown of the amount. Breakdown provides details such as total item amount, total tax amount, shipping, handling, gift wrap, insurance, and discounts, if any.
+ * The breakdown of the amount. Breakdown provides details such as total item amount, total tax amount, shipping, handling, insurance, and discounts, if any.
  */
 @Model
 public class AmountBreakdown {

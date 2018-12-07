@@ -1,4 +1,4 @@
-package com.paypal.AuthorizeIntentExamples;
+package com.paypal.authorizecapture;
 
 import java.io.IOException;
 
@@ -25,7 +25,7 @@ public class RefundOrder extends PayPalClient {
 		RefundRequest refundRequest = new RefundRequest();
 		Money money = new Money();
 		money.currencyCode("USD");
-		money.value("20.00");
+		money.value("2.00");
 		refundRequest.amount(money);
 		return refundRequest;
 	}

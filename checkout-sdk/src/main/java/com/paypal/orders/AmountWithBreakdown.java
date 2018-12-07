@@ -1,8 +1,8 @@
-// This class was generated on Tue, 04 Sep 2018 12:15:13 PDT by version 0.1.0-dev+904328-dirty of Braintree SDK Generator
+// This class was generated on Tue, 04 Dec 2018 17:38:27 PST by version 0.1.0-dev+904328-dirty of Braintree SDK Generator
 // AmountWithBreakdown.java
 // @version 0.1.0-dev+904328-dirty
 // @type object
-// @data H4sIAAAAAAAC/+yYX2vkNhTF3/spLn5qwRmnf6Aw0Id0l8K2dDe0oVCSkLkjXcdiZcl7JSVrSr97sTWyPTNpuyl56uhtdG1JR0fn/kj8R3HVd1Ssi4vWBuPhUfkGvmfC99I+mqIsfkNWuNX0FtvhtaIsfqJ+HrwmJ1h1XllTrIurhsBbjxosS2LAxaJowI7voYZt2gB8gx46tg9KkgNJHpV2JbggGkAHflpQeWp365W7ksePU8U1quuUuS+hQSP1+EsZFxiNoBLQSJDKieFlV4KqAU2/ugnn51+LLVfjD3pTQ28DuI6EqnvYxLVXk9hNOerZHYo+BNQONoOwu1HQBjodHGw8ftwvJHFpnCSm8SR0A60yyxl3SfTmUOzVrKQNzsOWAKGzTnn1QGBCuyWOxksSqkUNHZNQTlkzuoFwif0l6jMXus6yJwlxB4SGqf7upmi879y6qiQ9kLYd8arDvkO9EratpBWuUsbTPeNwqZVUTMJXTM5XIjCTEf2ZsJJcdVNEyakc96kwVldFWVwwYx+DeF4WvxDKd0b3xbpG7WgofAiKSU6FSx70eEWuWF8fRvgf0rtdPJpjvKwe53nOqq0X97+a9znK7xzf/xrde1V7eGTsPiHFL+bfz9ZQf2xaUrXn2aJ4bFm66Bi0eCu1ZUColUEj1OAAo3EohllzuyNsUQ9nBcvQYd+S8SDDC2bEeY6qDw6ZJN8Nkd076eGT4+Ne+4aJzkSDjMITw5tf351989WX385GDHNvP39W13wR2agkGa9qRRGG6aVnOeI5HBhigtZ/lv/qygPqsO9Gqhy7MD4p4bFRooFW3TcDk9ax14OOvR5HWsXRhYHRC+IxHbujDSfV6j3B5sfL3zfRBGQCYz34vlMCte6h5pgd1DswVmnVgz0m/KUZT+919fb1Yi8XtlINLS0HhRZ8Y4NDI33jnt6uSif8wfJ4T7wzP5HY1jOHNQpyu4bYS0gJjgiuX6XaqyEIz43NSyTjdpGNv6HChKW9eCyrmQuZC5kLJ8eF6c/hfTAsy5kMmQyZDKdGhvR/zl46FsVMhUyFTIVTpcL0petJPCyfZk5kTmROnBonpo/qe/FYVjMXMhcyF/5nXLj9hHTknsk9k3tm7pnP/gIAAP//
+// @data H4sIAAAAAAAC/+yY22vkNhTG3/tXHPzUgjNOL1AY6EO620JaujvsDoWShMwZ6TgWK0veIylZU/q/F/k29kx6CaQvjd6sI1v69Pk7P2b8e7ZtG8rW2UVtg/HwoHwF3zPhB2kfTJZnvyIr3Gt6g3W8Lcuzn6k9DF6TE6war6zJ1tm2IvDWowbLkhhwtigasN19qGE/bgC+Qg8N23slyYEkj0q7HFwQFaADPy2oPNXDevlQ8vhpqrhKNY0ydzlUaKTurpRxgdEIygGNBKmciDe7HFQJaNrVdTg//1rsuegu6LKE1gZwDQlVtrDr115NYnd5p2c4FH0MqB3sorDbTtAOGh0c7Dx+WhZGceN4lDiOJ6E7qJWZP3E7it4di90elNTBedgTIDTWKa/uCUyo98Qr+NEyaOU8SbAluNA0luNABGYyQpHrrSGhatTQMAnllDU5OKLutBtsN6jh3Q/vt3CxuXTQ60ComMrvrrNCWuEKZTzdMcbXW0jFJHzB5Hwx7NOeCSvJFddZL/7VUIZXsdyvWGA/t8ry7IIZ2z6Y53n2jlC+NbrN1iVqR7HwMSgmORU2bBtir8hl66vjSP9NmvezqUOs59XTfB+ya8tZHlaHfU7yfIjzfxblZzPtF2uoPXVqlLIwalY89Wl89Z3gIamlZUAolUEjVDw2o3EofJ+4wSSEPep4VrAMDbY1GQ8yPGMwnOde9dEhR8m3Ma2Lkx7PnB73yldMdCYqZBSeGC7fvz375qsvvz0YEZ+9+fxJDfNFD0glyXhVxnb1M2uf5IjncGSICVr/kf+jK/eow9KNsXLqQjeTw0OlRAW1uqsimNZ9gwfdN3g/0qofXRjovCDu0jEDk1YfCHY/bX7b9SYgExjrwbeNEqh1CyX32UE90LEYVz3aYwLc+MTje23fvJ7t5cJeqtjHMiq04CsbHBrpK/f4dsV4wkjd+J54MH/AcQTGRFqNgtzQEIuE9Oi9WiLyqbF5jmTczLLxF1SYsLSIx7yauJC4kLjw4rgw/SZegmFeTmRIZEhkeGlkGP/cLNIxKyYqJCokKrxUKkyfux7Fw3w2cSJxInHipXFi+rK+iMe8mriQuJC48D/jws2/SEfqmdQzqWcOPfPZnwAAAP//
 // DO NOT EDIT
 package com.paypal.orders;
 
@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.ArrayList;
 import com.braintreepayments.http.annotations.*;
 /**
- * The total order amount with an optional breakdown that provides details, such as the total item amount, total tax amount, shipping, handling, insurance, and discounts, if any.<br/>If you specify `amount.breakdown`, the amount equals `item_total` plus `tax_total` plus `shipping` plus `handling` plus `insurance` minus `shipping_discount`.<br/>The amount must be a positive number with decimal precision and a PayPal-supported <a href="https://developer.paypal.com/docs/integration/direct/rest/currency-codes/">currency</a>.
+ * The total order amount with an optional breakdown that provides details, such as the total item amount, total tax amount, shipping, handling, insurance, and discounts, if any.<br/>If you specify `amount.breakdown`, the amount equals `item_total` plus `tax_total` plus `shipping` plus `handling` plus `insurance` minus `shipping_discount`.<br/>The amount must be a positive number. For listed of supported currencies and decimal precision, see the PayPal REST APIs <a href="/docs/integration/direct/rest/currency-codes/">Currency Codes</a>.
  */
 @Model
 public class AmountWithBreakdown {
@@ -21,7 +21,7 @@ public class AmountWithBreakdown {
     public AmountWithBreakdown() {}
 
 	/**
-	* The breakdown of the amount. Breakdown provides details such as total item amount, total tax amount, shipping, handling, gift wrap, insurance, and discounts, if any.
+	* The breakdown of the amount. Breakdown provides details such as total item amount, total tax amount, shipping, handling, insurance, and discounts, if any.
 	*/
 	@SerializedName("breakdown")
 	private AmountBreakdown breakdown;

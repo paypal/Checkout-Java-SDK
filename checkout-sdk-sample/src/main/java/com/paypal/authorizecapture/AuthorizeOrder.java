@@ -1,4 +1,4 @@
-package com.paypal.AuthorizeIntentExamples;
+package com.paypal.authorizecapture;
 
 import java.io.IOException;
 

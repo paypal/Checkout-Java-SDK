@@ -1,8 +1,8 @@
-// This class was generated on Tue, 04 Sep 2018 12:15:14 PDT by version 0.1.0-dev+904328-dirty of Braintree SDK Generator
+// This class was generated on Tue, 04 Dec 2018 17:38:27 PST by version 0.1.0-dev+904328-dirty of Braintree SDK Generator
 // SellerProtection.java
 // @version 0.1.0-dev+904328-dirty
 // @type object
-// @data H4sIAAAAAAAC/6SSQavUQAzH736KMCeFuvXkobcHXkTUog8vj4ekM+l2YHZmTNItg+x3l+lCd9cVRDz23zTJ75f+NI8lk+nMVwqBGHpOSlZ9iqYx35A9DoE+4aGWmMZ8oHJ5eEdi2ee1uDOPE0GgIwVII+StDaRxJCYHKOBo9JEcDAWeeiw9BrgbC2Ni+EhsJ4wqzy8n1Sxd2y7LsstYMoadTYd2lnahAXOW9pBzK2Rn9lpaWfu9vsx/tTONeWDGcgZ905gvhO5zDMV0IwahGvyYPZPbgp5TJlZPYrqnTZEo+7i/9+K85Fnpu0WlfeL61bWpP76+dfcQAeuKVZ1N0fmaC+iECsgENh1Xh9WNTgTKGAVXvt/w3v4rXpxDODV/ZRRFnW+5tuiW5X10vqIKLBPpRHcbgxeg4Pd+CLQSnW929c/878lWpufTi18AAAD//w==
+// @data H4sIAAAAAAAC/9SSwYrUQBCG7z5F0SeFOPHkIbcFEUTUQRcvyyI1yZ9JQ093W1XZ0Mi+u3QWsjuOIB73mD+Vqvq+1C93XTJc574hBAjtJRl68ym6xn1n8XwI+MynWuIa9xHl8eEdtBef1+LOXU+ggDsESiPlrQ2lcYRgIFYaMPqIgQ6FbvZc9hzoYiyNSegTpJ84mt6+nMyydm27LMsuc8kcdn06tbO2Cw6cs7annFtFP4u30ura7/Xj/Fc717grES4PoG8a9xU8fImhuG7koKjBz9kLhi3YS8oQ81DX3WyK1MTH46WXwWueDT96NhyT1K+emvrr63N3V5G4rljV9SkOvuZKNrERC6hPd6vD6sYmkAlH5ZXvD7y3/4sX5xDum38yqrHN51xbdM7yIQ6+oiotE2zCxcbklRD80R8CVqKHf/bkZnb0Pgn5OCY5cQ0aUuAZ3cwq9fb+xW8AAAD//w==
 // DO NOT EDIT
 package com.paypal.orders;
 
@@ -34,7 +34,7 @@ public class SellerProtection {
 	}
 
 	/**
-	* Indicates whether the transaction is eligible for seller protection.
+	* Indicates whether the transaction is eligible for seller protection. For information, see [PayPal Seller Protection for Merchants](https://www.paypal.com/us/webapps/mpp/security/seller-protection).
 	*/
 	@SerializedName("status")
 	private String status;

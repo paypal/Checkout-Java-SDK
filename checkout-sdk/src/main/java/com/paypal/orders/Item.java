@@ -1,8 +1,8 @@
-// This class was generated on Tue, 04 Sep 2018 12:15:13 PDT by version 0.1.0-dev+904328-dirty of Braintree SDK Generator
+// This class was generated on Tue, 04 Dec 2018 17:38:27 PST by version 0.1.0-dev+904328-dirty of Braintree SDK Generator
 // Item.java
 // @version 0.1.0-dev+904328-dirty
 // @type object
-// @data H4sIAAAAAAAC/+yXTU/8NhDG7/0Uo1z6Rwob+iJV2hsCVaKUF8FSqaIIZu3ZjbWOHewxNKr47pXzsiSEFYKiVQ+cohlP7N/MPn6U/SeZVSUl0+SIqUjS5A90CueaTrGI2SRNjql6Dg7JC6dKVtYk02SWE0hiVNrDwjrgnEAxFR7YwpygDE7k6ElOkjTZdw6r5rC9NLkglGdGV8l0gdpTTNwH5UiuE+fOluRYkU+m12tMz06Z5RhUINPSumoA3EuOwSModBXAVUn/ldIErZ/SN1FlD6VPO8xvmjTJhrxXvSVuEx994DaxYbRxFaIoFOv3jZZd+BjhfUDDioci6CU3kHYVEzgJnqNwER5zqwlMKObktgPvV2HA3cRjZM9WrGBFVCqzhGAUw7fL46udwQ38ZEmcWEPVGJnx7wFyE4+RRXCOjKgAjQQsbDBc0yIslEEjFGpgh8ajiG+l4IPIAT0gzFGjEbWQSqwKMgwy0Bb8pEW+FVYOVf9yZdzuNeeOaFfk6FAwOTi6PNv9+ccffnkeRHz35lsmrfCZMkxLh3GDTCpHgjNHnrOueDcW+2wHOEcGJcmwWijy9Y/dFW1How+ow3AaXWY8hXolhcdciRwKtczjzZr+Ffb2fhJB109qIq2aaN9APQtytTra1mKnWq0I7n47//OuGQI6AmM5urYSqHUFC9doB/Wk2TTrdn1xBkgSqkC9fuP1s2anh72zfJhL9aBkNF/DFji3waORnPvXj8u6Dn9tL6Vrh99aCtjFGqTUKMi3F2KgkBQ8EVwfdLmDKIT3yuYzlHHzthdEI7pt7vZAIMP8/80bxv1+WcOXNXxZw8esYZM2gtNDT6jjsS6uLn6P/xzqjzJlFtYVdQ8TmOXK16tYloTOgzKtxD3bgtz3vu8RkCvP1lWf8hF08/TdvwAAAP//
+// @data H4sIAAAAAAAC/+yUX0vkPBTG799PcciVQrW+f+CFuRNlwRX/sLoLiyt6JjkzDZMmNTnRLYvffcm0HVuriLsy7IVXJU9Okl9Onzw/xHldkZiIA6ZSZOILeo1TQ8dYJlVk4pDqh8E+Bel1xdpZMRHnBYEiRm0CzJwHLgg0UxmAHUwJquhlgYHUtsjErvdYN4ftZOIToTqxphaTGZpASbiJ2pNaCafeVeRZUxCTixVmYK/tfAwqkWnufD0A7olj8AQKXQVwXdHvUtpozH32IqrqofRph/pznSbVkPeq18Rt06cP3ArPtDbNQjKFZvO61rKPv0Z4E9Gy5qEJeuIzpF3FNhzFwMm4CHeFMwQ2llPy64EPizjgbsZj5MBOLmBBVGk7h2g1w8bZ4efNwQt8Y0scOUv1GJnx+wC5GY+RZfSerKwBrQIsXbS8pEWYaYtWajTAHm1AmVZlEKIsAAMgTNGglUsjVViXZBlUpDXkSYt8JZ0auv7xzPi6F1x4oi1ZoEfJ5OHg7GTrv3/+/v+hEWnt5UaunAy5tkxzj2mDXGlPknNPgfOueCsVh3wTuEAGrciynmkKy5/dFa3Ho7do4rAbnTLuwnImg7tCywJKPS/Sy5p8izs7/8poll9qRkY3o10Ly16QX7qjvVq6qdELguuPp1+vmyagJ7COU2pricbUMPONd9BsN5vm3a6PzgBFUpdoViuePuv8eL93VohTpW+1SuFr2QEXLga0iovw9HF5d8MP7aP0bfPbSAE3W4FUBiWF9kEMHJJBIIKLvU7bS0Z4rW3ewhmXL2dBCqKr5m0PDDLU/7RsGN/3PRreo+E9Gl4TDZf3f/0EAAD//w==
 // DO NOT EDIT
 package com.paypal.orders;
 
@@ -111,19 +111,6 @@ public class Item {
 	
 	public Item unitAmount(Money unitAmount) {
 	    this.unitAmount = unitAmount;
-	    return this;
-	}
-
-	/**
-	* The URL to item information. This URL appears in the customer's transaction history.
-	*/
-	@SerializedName("url")
-	private String url;
-
-	public String url() { return url; }
-	
-	public Item url(String url) {
-	    this.url = url;
 	    return this;
 	}
 }

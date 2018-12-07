@@ -1,4 +1,4 @@
-// This class was generated on Tue, 04 Sep 2018 12:15:13 PDT by version 0.1.0-dev+904328-dirty of Braintree SDK Generator
+// This class was generated on Tue, 04 Dec 2018 17:38:27 PST by version 0.1.0-dev+904328-dirty of Braintree SDK Generator
 // DisplayableMerchantInformation.java
 // @version 0.1.0-dev+904328-dirty
 // @type object

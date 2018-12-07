@@ -8,7 +8,7 @@ import org.json.JSONObject;
 
 import com.braintreepayments.http.HttpResponse;
 import com.braintreepayments.http.serializer.Json;
-import com.paypal.AuthorizeIntentExamples.CreateOrder;
+import com.paypal.delayedauthorizecapture.CreateOrder;
 import com.paypal.orders.AmountBreakdown;
 import com.paypal.orders.AmountWithBreakdown;
 import com.paypal.orders.LinkDescription;

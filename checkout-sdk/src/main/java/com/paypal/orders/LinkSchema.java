@@ -1,8 +1,8 @@
-// This class was generated on Tue, 04 Sep 2018 12:15:13 PDT by version 0.1.0-dev+904328-dirty of Braintree SDK Generator
+// This class was generated on Tue, 04 Dec 2018 17:38:27 PST by version 0.1.0-dev+904328-dirty of Braintree SDK Generator
 // LinkSchema.java
 // @version 0.1.0-dev+904328-dirty
 // @type object
-// @data H4sIAAAAAAAC/8SVzU7bQBDH732K0V4KUkhQ1XLILVWpFLVpENBeEIeJPY63Xc+a3TFgVbx7tU4gbJwgVBw47n/24zez8/FXndclqaH6rvkPnCU5Fah66hc6jTNDP7AIRtVT36heLb6QT5wuRVtWQ3WeEzi6qsgLpCgI1oEJ1wm6OUlf9dTIOawXLx321ClhOmVTq2GGxlMQrirtKH0QTpwtyYkmr4YXD4x29psSaeNhmurAgmYsVPiItm2L4V8Ix5Uxd70HwpExMM0gPLUB05hpFsMtlRhpxIABCWwGvpod+OZXfB9CoJsAF5UXuEajUxQCnKNmL4DGRPtj145e6hrXT7jG9bprS6Ub1yxTyKrCOtqhi9vyK6VMc5NFcW7F+i7zajtZSZwSJ+FQjBYZdsnmxWmet9kyh/OCWE7JW1M1Tz8m3Gh+ixjqVs/QGzvFiCEY+t1Shb7bZgrtM2a6V7bXU7Oj44qYUKo3zINiKa/w7pX2ZGgsIHVJgJxCYlnoVg6IE5tqnkNTytTdkNiWjjPN6Orj5bMRfMvU9qLB5jY2nBHBxaQyosvKldYTjFnIMQlMUBs4vhViH1oE7E3Gk+N9OEEnMGUawlfrCpTwd6sz5D3OCT7bVJO/3MtFSj8cDMRa4/uaJOtbNx/kUpiBy5IPhx8/7fdfp57DF0ZhWwpPffl/x+f8xg6hyT4IWM+KxFE3kbh8Rs9gK1EoFutddq8p0/bxa5nWxu+90t34Xe3vuMdsy7cSJT8TdHGkH6trmWcBy9LUILn2i/pEEAuSEwQvkBPy7+Hn6dj3wIcrGlNYw42WfHHuGk1F/deZPCVKKIVHJ9c8bVnfYj6WW/B2y3V59+4fAAAA//8=
+// @data H4sIAAAAAAAC/7yVTU/bTBDH78+nGO3lASkkqGo55EZVKkVtGgS0F8RhYo/jbdezZncMWFW/e7XOGxtjhIrJ0f+Z9f5mdl5+q6u6JDVWXzX/gsskpwLVQP1Ap3Fu6BsWwagG6gvV249P5BOnS9GW1Vhd5QSObivyAikKgnVgwu8E3YJkqAbq1DmslzcdD9QFYTpjU6txhsZTEG4r7SjdCOfOluREk1fj6w2jnf+kRNp4mKY6sKCZCBU+om3bYvhTrmHrAzo4vZaYK2P+DDbYp8bALINw/xPsxsyymHil7HICBiSwGfhqfuSbp/JDCNlvsl5UXuAOjU5RCHCBmr0AGhP5x6GdvDY0rp8Jjevd0FZKP6FZplBqhXX0hiF2FV1KmeambOKCi/U40n7rqpusJE6Jk3AoRosMb8nmxWletNkyh4uCWC7IW1M1Vz8mfNLcnjZrN3Abv+F+cqtbA0Z3jJVmlPRMFYZ0mynM2phprXT3WePRc6dMKdVPLI9iJW/x1kr7YRsLSF0SIKeQWBZ6kCPixKaaF9C0OPW3UbrKdK4ZXX22ujaCb5naUTTY3MaGSyK4nlZGdFm50nqCCQs5JoEpagNnD0Lsw+iAg+lkenYI5+gEZkxj+GxdgRLebnuGvMcFwUebavI3B7lI6cejkVhr/FCTZEPrFqNcCjNyWfLu+P2Hw+F++jw8YZS2lfDck/9zfq7u7Ria6oOA9aJMnPSTiZsXzAy2EqVi+f2W03fG1L2WLdPOWl4r/a3lrX/PM6ar3kqU/FLQxZl+rO5UngUsS1OD5Nov+xNBLEhOEKJATsj/D98vJn4APvyiMYVvuNeSL8/doaloT5unRAmt8OjkTqQta7vXVl5Qbtz2Bd9B3Y3bT3P+9xcAAP//
 // DO NOT EDIT
 package com.paypal.orders;
 
@@ -21,6 +21,7 @@ public class LinkSchema {
     public LinkSchema() {}
 
 	/**
+	* Any additional items.
 	*/
 	@SerializedName("additionalItems")
 	private Object additionalItems;
@@ -39,12 +40,12 @@ public class LinkSchema {
 //	private List<AllOfItem> allOf;
 //
 //	public List<AllOfItem> allOf() { return allOf; }
-//
+//	
 //	public LinkSchema allOf(List<AllOfItem> allOf) {
 //	    this.allOf = allOf;
 //	    return this;
 //	}
-
+//
 //	/**
 //	* An array of sub-schemas. The data must validate against one or more sub-schemas.
 //	*/
@@ -52,7 +53,7 @@ public class LinkSchema {
 //	private List<AnyOfItem> anyOf;
 //
 //	public List<AnyOfItem> anyOf() { return anyOf; }
-//
+//	
 //	public LinkSchema anyOf(List<AnyOfItem> anyOf) {
 //	    this.anyOf = anyOf;
 //	    return this;
@@ -83,6 +84,7 @@ public class LinkSchema {
 	}
 
 	/**
+	* The fragment resolution.
 	*/
 	@SerializedName("fragmentResolution")
 	private String fragmentResolution;
@@ -107,14 +109,14 @@ public class LinkSchema {
 	    return this;
 	}
 
-//	/**
-//	* An array of links.
-//	*/
+	/**
+	* An array of links.
+	*/
 //	@SerializedName(value = "links", listClass = Link.class)
 //	private List<Link> links;
 //
 //	public List<Link> links() { return links; }
-//
+//	
 //	public LinkSchema links(List<Link> links) {
 //	    this.links = links;
 //	    return this;
@@ -145,14 +147,14 @@ public class LinkSchema {
 	    return this;
 	}
 
-//	/**
-//	* An array of sub-schemas. The data must validate against one sub-schema.
-//	*/
+	/**
+	* An array of sub-schemas. The data must validate against one sub-schema.
+	*/
 //	@SerializedName(value = "oneOf", listClass = OneOfItem.class)
 //	private List<OneOfItem> oneOf;
 //
 //	public List<OneOfItem> oneOf() { return oneOf; }
-//
+//	
 //	public LinkSchema oneOf(List<OneOfItem> oneOf) {
 //	    this.oneOf = oneOf;
 //	    return this;
@@ -172,6 +174,7 @@ public class LinkSchema {
 	}
 
 	/**
+	* The pattern properties.
 	*/
 	@SerializedName("patternProperties")
 	private Object patternProperties;

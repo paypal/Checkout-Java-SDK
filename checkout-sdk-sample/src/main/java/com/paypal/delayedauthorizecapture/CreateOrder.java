@@ -1,4 +1,4 @@
-package com.paypal.CaptureIntentExamples;
+package com.paypal.delayedauthorizecapture;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -26,20 +26,20 @@ import com.paypal.orders.ShippingDetails;
 public class CreateOrder extends PayPalClient {
 
 	/**
-	 * Method to generate sample create order body with <b>CAPTURE</b> intent
+	 * Method to create complete order body with <b>AUTHORIZE</b> intent
 	 * 
 	 * @return OrderRequest with created order request
 	 */
-	private OrderRequest buildRequestBody() {
+	private OrderRequest buildCompleteRequestBody() {
 		OrderRequest orderRequest = new OrderRequest();
-		orderRequest.intent("CAPTURE");
+		orderRequest.intent("AUTHORIZE");
 
 		ApplicationContext applicationContext = new ApplicationContext().brandName("EXAMPLE INC").landingPage("BILLING")
 				.cancelUrl("https://www.example.com").returnUrl("https://www.example.com").userAction("CONTINUE")
 				.shippingPreference("SET_PROVIDED_ADDRESS");
 		orderRequest.applicationContext(applicationContext);
 
-		List<PurchaseUnitRequest> purchaseUnitRequests = new ArrayList<PurchaseUnitRequest>();
+		List<PurchaseUnitRequest> purchaseUnitRequests = new ArrayList<>();
 		PurchaseUnitRequest purchaseUnitRequest = new PurchaseUnitRequest().referenceId("PUHF")
 				.description("Sporting Goods").customId("CUST-HighFashions").softDescriptor("HighFashions")
 				.amount(new AmountWithBreakdown().currencyCode("USD").value("220.00")
@@ -69,7 +69,26 @@ public class CreateOrder extends PayPalClient {
 	}
 
 	/**
-	 * Method to create order
+	 * Method to create minimum required order body with <b>AUTHORIZE</b> intent
+	 * 
+	 * @return OrderRequest with created order request
+	 */
+	private OrderRequest buildMinimumRequestBody() {
+		OrderRequest orderRequest = new OrderRequest();
+		orderRequest.intent("AUTHORIZE");
+		ApplicationContext applicationContext = new ApplicationContext()
+				.cancelUrl("https://www.example.com").returnUrl("https://www.example.com");
+		orderRequest.applicationContext(applicationContext);
+		List<PurchaseUnitRequest> purchaseUnitRequests = new ArrayList<>();
+		PurchaseUnitRequest purchaseUnitRequest = new PurchaseUnitRequest()
+				.amount(new AmountWithBreakdown().currencyCode("USD").value("220.00"));
+		purchaseUnitRequests.add(purchaseUnitRequest);
+		orderRequest.purchaseUnits(purchaseUnitRequests);
+		return orderRequest;
+	}
+
+	/**
+	 * Method to create order with complete payload
 	 * 
 	 * @param debug true = print response data
 	 * @return HttpResponse<Order> response received from API
@@ -78,10 +97,43 @@ public class CreateOrder extends PayPalClient {
 	public HttpResponse<Order> createOrder(boolean debug) throws IOException {
 		OrdersCreateRequest request = new OrdersCreateRequest();
 		request.header("prefer","return=representation");
-		request.requestBody(buildRequestBody());
+		request.requestBody(buildCompleteRequestBody());
 		HttpResponse<Order> response = client().execute(request);
 		if (debug) {
 			if (response.statusCode() == 201) {
+				System.out.println("Order with Complete Payload: ");
+				System.out.println("Status Code: " + response.statusCode());
+				System.out.println("Status: " + response.result().status());
+				System.out.println("Order ID: " + response.result().id());
+				System.out.println("Intent: " + response.result().intent());
+				System.out.println("Links: ");
+				for (LinkDescription link : response.result().links()) {
+					System.out.println("\t" + link.rel() + ": " + link.href() + "\tCall Type: " + link.method());
+				}
+				System.out.println("Total Amount: " + response.result().purchaseUnits().get(0).amount().currencyCode()
+						+ " " + response.result().purchaseUnits().get(0).amount().value());
+				System.out.println("Full response body:");
+				System.out.println(new JSONObject(new Json().serialize(response.result())).toString(4));
+			}
+		}
+		return response;
+	}
+
+	/**
+	 * Method to create order with minimum required payload
+	 * 
+	 * @param debug true = print response data
+	 * @return HttpResponse<Order> response received from API
+	 * @throws IOException Exceptions from API if any
+	 */
+	public HttpResponse<Order> createOrderWithMinimumPayload(boolean debug) throws IOException {
+		OrdersCreateRequest request = new OrdersCreateRequest();
+		request.header("prefer","return=representation");
+		request.requestBody(buildMinimumRequestBody());
+		HttpResponse<Order> response = client().execute(request);
+		if (debug) {
+			if (response.statusCode() == 201) {
+				System.out.println("Order with Minimum Payload: ");
 				System.out.println("Status Code: " + response.statusCode());
 				System.out.println("Status: " + response.result().status());
 				System.out.println("Order ID: " + response.result().id());
@@ -106,6 +158,7 @@ public class CreateOrder extends PayPalClient {
 	public static void main(String args[]) {
 		try {
 			new CreateOrder().createOrder(true);
+			new CreateOrder().createOrderWithMinimumPayload(true);
 		} catch (com.braintreepayments.http.exceptions.HttpException e) {
 			System.out.println(e.getLocalizedMessage());
 		} catch (Exception e) {
