@@ -1,8 +1,8 @@
-// This class was generated on Tue, 04 Sep 2018 12:15:13 PDT by version 0.1.0-dev+904328-dirty of Braintree SDK Generator
+// This class was generated on Fri, 15 Feb 2019 14:59:09 PST by version 0.1.0-dev+8fcb5f of Braintree SDK Generator
 // Media.java
-// @version 0.1.0-dev+904328-dirty
+// @version 0.1.0-dev+8fcb5f
 // @type object
-// @data H4sIAAAAAAAC/6ySwUrDQBCG7z7FsKcWYlNEPeSmWKFIbNHipfSwTSbJwmZ2nZ1gg/TdJbVUS0BFPe6/DPPt9++rWrQeVaJSzI1WkXrSbPTa4r2uu1hF6g7bj8MNhoyNF+NIJWpRIdTdIEjrETTlkDkS3MgpUuZyQyWErMIaRypSV8y6fV83jtQD6nxGtlVJoW3ALnhuDGN+CObsPLIYDCpZHkCDsKGyT7o2pLmd7Ncecfeu+q/YYVMfGx4RYZk2Voxv2LuAMCVBJhRItbEw2QhSMI4CDNJpOhnCXLPAjDCBW8e1FnDFpxkMQZcI1y43GFaDSsSHJI7FORtGBqUYOS7jSmobc5Gdjc8vhn91R4212+hbgV2FR9r2wVeV/9rP4sUlsPtz0GH9yMTl/5hYbU/eAAAA//8=
+// @data H4sIAAAAAAAC/6ySQUvzQBCG79+vGPbUQr6miHrITbFCkdiixUspsk0mycJmdp2dYIP0v0tabS0FFfW47zDMs8/Mi5q1HlWiUsyNVpF60Gz00uKtrrtYReoG2/3jCkPGxotxpBI1qxDqrhGk9QiacsgcCa7kP1LmckMlhKzCGgcqUhfMut2OG0bqDnU+IduqpNA2YBc8NYYx3wVTdh5ZDAaVzHegQdhQeUy6NKS5fXyfewC+rY32peNvbLjpmBvuEWGeNlaMb9i7gDAmQSYUSLWxMFoJUjCOAvTScTrqw1SzwIQwgWvHtRZwxYceDEGXCJcuNxgWvUrEhySOxTkbBgalGDgu40pqG3ORnQxPz/q/lUeNtevoS4PdDg+0vQWf7fzHfmbPLoHN0UGH9S0T539jYrH+9woAAP//
 // DO NOT EDIT
 package com.paypal.orders;
 

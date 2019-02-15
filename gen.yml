@@ -1,6 +1,6 @@
 ---
-projectName: CheckoutSDK
+projectName: PayPalCheckoutSdk
 language: java
-sourcePath: src/main/java/com/paypal
-testPath: src/test/java/com/paypal
+sourcePath: checkout-sdk/src/main/java/com/paypal
+testPath: checkout-sdk/src/test/java/com/paypal
 apiVersioning: false

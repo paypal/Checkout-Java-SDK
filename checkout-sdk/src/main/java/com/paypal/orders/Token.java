@@ -1,6 +1,6 @@
-// This class was generated on Tue, 04 Sep 2018 12:15:13 PDT by version 0.1.0-dev+904328-dirty of Braintree SDK Generator
+// This class was generated on Fri, 15 Feb 2019 14:59:09 PST by version 0.1.0-dev+8fcb5f of Braintree SDK Generator
 // Token.java
-// @version 0.1.0-dev+904328-dirty
+// @version 0.1.0-dev+8fcb5f
 // @type object
 // @data H4sIAAAAAAAC/6yQTUsEMQyG7/6KkHMVz3MT5rIIOsjiRTzEbWan2GnHNEWq7H+Xrs76MYgIe8zzEvK8ecV1mRgbXMdHDmjwlsTRg+crGitGg5dcPoeW00bcpC6GujQwaF10L2xhojJyUEgxy6YG0OdggebgDA1eiFB5P3lu8IbJXgdfsOnJJ67gKTthewCdxIlFHSds7g6yScWF7dLW2W+++3Fp3FHpyJ9uObCQsoVVC30U0LnNv0RV8g/PkL3fmT9ltcZfdT/Ary+mimBkHaIFHUjhmRLkxLb+eq6zr7Fqj9HhfnfyBgAA//8=
 // DO NOT EDIT

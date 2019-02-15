@@ -1,6 +1,6 @@
-// This class was generated on Tue, 04 Sep 2018 12:15:13 PDT by version 0.1.0-dev+904328-dirty of Braintree SDK Generator
+// This class was generated on Fri, 15 Feb 2019 14:59:09 PST by version 0.1.0-dev+8fcb5f of Braintree SDK Generator
 // TaxInformation.java
-// @version 0.1.0-dev+904328-dirty
+// @version 0.1.0-dev+8fcb5f
 // @type object
 // @data H4sIAAAAAAAC/6yRTUvDQBBA7/6KYS9eQrDgKTelFxG0aPAi0k6zk2Zxs7vObLSL9L9L0g8/2kMLHmd4TPLefqoyBVKFKnEJN6723GI03qlMPSEbnFu6w7YHVKZuKX0PY5KKTRjgQpUNQexPjMHXEBuCqpPoW+Icyh8TGAG04uHV+Q8HKAMbMPXgtY8NzCIup0bPAJ3eDtOYAs0AmYDprTNMOleZumLGtP7/i0w9EOp7Z5MqarRC/WKN7hYT9oE4GhJVPO/MJbJxi33h9ad/ae9W+/JbwXPZdMjhsQvBcyQNtefBc4JpgrbXbclFaCk2XoN3NuVQpmAqtDZlA7qJaQRGI6gaZKwisYD1bjHcM06bd6M7tDKkGl0exOadGEciJCcVi9z9CeY6a1fZkdWGBzuQbrs/oh/06IkR/8HwZXX2BQAA//8=
 // DO NOT EDIT

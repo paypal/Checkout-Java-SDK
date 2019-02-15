@@ -1,8 +1,8 @@
-// This class was generated on Tue, 04 Sep 2018 12:15:13 PDT by version 0.1.0-dev+904328-dirty of Braintree SDK Generator
+// This class was generated on Fri, 15 Feb 2019 14:59:09 PST by version 0.1.0-dev+8fcb5f of Braintree SDK Generator
 // AddressDetails.java
-// @version 0.1.0-dev+904328-dirty
+// @version 0.1.0-dev+8fcb5f
 // @type object
-// @data H4sIAAAAAAAC/7xVTW/bSAy9768gdJa1WezNtyDBYrG7yAZB2ktb2JSGsomOhipnxo5Q5L8Xow87ih0UQYrcJHL48d48cr5n911L2TK7NEbJe7imgGx9lmcfURlLSzfYpANZnv1L3fHnmnyl3AYWly2z+y2BE7doRUMKAjSGkw9t+uxTmyE1hC0GQCXw0lDghjw4IkMGalGopGkto6soB2X/NQdRkLAlBV+RQ2XxsN+SEtTsaLFRZHeowa4WbTBVhoY32wAljdkLuJEAhwb3HLapWCMOwpbVQIsaOkBnQFpyXqJWVMAdmegMujBF9IXJGl/AX6JAD9i0lnJYjz2sphLFZLDsaPXHGthD9BGt7QBT6ZLd0KnUx+iRpcIHJQorF5uSdN23tZ5s2NDcErqW1kWWZ5eq2A1XepFnd4Tmf2e7bFmj9ZQM3yIrmYPhVqUlDUw+W346iMEHZbc51UAZ2Rp2m76DmSCee+bquIRkNmCl6gGPGlBqlTy5kP4JWqWGPRXw4UDSlLaPT0IY6IBeJ9ZSNdE3HfTDLeF0s/O4Zzf2OV5c/FlVYqj/oivFHTn4W6IfLNXvR+db2XXR2sf8pxQbsrwj7VaedMfVnOUzztMxnA7BeKiAW/EBpK65IijlIYcSNyMj/XS1T/yJsHeC+kTNM5Rz+ynAwT90Cv9EH2B9rVG7NbAbP+E/dG8fiFfi6Ak9i2TyvIxlkOe79pt2xrluR/uLvSb/s0FKYxMph1KipR2qyUEFTS8uekhD7vfYvRe8WK6mdTDHN3ecAqxZfViIGlIgFzh0UJKVPeC4vw7rSPSwy86uMh/LxZl15tltLB3TpF2VHq9XLLMCrtClRw2hthhy8EG0y6G2Ippol6anHdNr1pALv4T1L4+//QAAAP//
+// @data H4sIAAAAAAAC/7xVTW/DRBC98ytGPjtuEbfcqlYIASpVVbgAisfecTJivWNmd5NaqP8drT+SukmFqqLe7Jn9eO/Nm9l/sqe+o2yd3Rij5D3cUUC2Psuz31AZK0v32KYFWZ79RP3p5458rdwFFpets6cdgRO36kRD2gRoDKcc2vQ5HG3GoyHsMAAqgZeWArfkwREZMtCIQi1tZxldTTko+79yEAUJO1LwNTlUFg+HHSlBw45WW0V2xzvYNaItppuh5e0uQEXT6QXcS4AjwAOHXbqsFQdhx2qgQw09oDMgHTnwErWmAh7JRGfQhXnLcDNZ44s/4vX1d3WlV8MHfS8K9IxtZymHcoK0mW8s5oBlR5tvS2AP0Ue0tgdMSCp2I3BpTrsn0QoflChsXGwr0jKHcg5gS2U+oJ5Doe+oLLI8u1HFfqzvdZ49EppfnO2zdYPWUwr8HVnJHAMPKh1pYPLZ+vejM3xQdttzQ1SRrWG3HSAs3PE2s7TKDaSwASv1QHcyhFKn5MmF9E/QKbXsqYBfjxLNxw77kytGMWAwjbVUz+LNC/1YMZzLvNxXwKJeYy1rMTQW81ZxTw5+kOjHSH11Sn5WXRetfcn/U2JDlvek/caT7rleqnwhed6T8yKYFhXwID6ANA3XBJU851DhdlJkaLXuVT4J9kVUX9l5wXIZPyc45kek8GP0Aco7jdqXwG76hJ/Rfb4hPshjEPQikznzPpfRnl+KN82MS2in+LtYU/5NI6W2iZRDJdHSHtXkoIJmMBc9pyb3B+y/il6sNvM4WPJbJs4JNqw+rEQNKZALHHqoyMoBcJpfx3EkepxlF0eZj9Xqwjjz7LaWTsekWZVesg8MswJu0aUXDqGxGHLwQbTPobEimmSXdpAd09PWkgv/i+p/vnzzLwAAAP//
 // DO NOT EDIT
 package com.paypal.orders;
 
@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.ArrayList;
 import com.braintreepayments.http.annotations.*;
 /**
- * The non-portable additional address details that are sometimes needed for compliance, risk, or other scenarios where fine-grain address information might be needed. Not portable with common third party and opensource. Redundant with core fields. For example, `address_portable.address_line_1` is usually a combination of `address_details.street_number` and `street_name` and `street_type`.
+ * The non-portable additional address details that are sometimes needed for compliance, risk, or other scenarios where fine-grain address information might be needed. Not portable with common third party and open source. Redundant with core fields.<br/>For example, `address_portable.address_line_1` is usually a combination of `address_details.street_number`, `street_name`, and `street_type`.
  */
 @Model
 public class AddressDetails {

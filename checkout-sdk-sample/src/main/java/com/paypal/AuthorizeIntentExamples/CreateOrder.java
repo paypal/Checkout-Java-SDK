@@ -9,7 +9,6 @@ import org.json.JSONObject;
 import com.braintreepayments.http.HttpResponse;
 import com.braintreepayments.http.serializer.Json;
 import com.paypal.PayPalClient;
-import com.paypal.orders.AddressPortable;
 import com.paypal.orders.AmountBreakdown;
 import com.paypal.orders.AmountWithBreakdown;
 import com.paypal.orders.ApplicationContext;
@@ -22,6 +21,7 @@ import com.paypal.orders.OrderRequest;
 import com.paypal.orders.OrdersCreateRequest;
 import com.paypal.orders.PurchaseUnitRequest;
 import com.paypal.orders.ShippingDetails;
+import com.paypal.orders.PortablePostalAddress;
 
 public class CreateOrder extends PayPalClient {
 
@@ -61,7 +61,7 @@ public class CreateOrder extends PayPalClient {
 					}
 				})
 				.shipping(new ShippingDetails().name(new Name().fullName("John Doe"))
-						.addressPortable(new AddressPortable().addressLine1("123 Townsend St").addressLine2("Floor 6")
+						.address(new PortablePostalAddress().addressLine1("123 Townsend St").addressLine2("Floor 6")
 								.adminArea2("San Francisco").adminArea1("CA").postalCode("94107").countryCode("US")));
 		purchaseUnitRequests.add(purchaseUnitRequest);
 		orderRequest.purchaseUnits(purchaseUnitRequests);

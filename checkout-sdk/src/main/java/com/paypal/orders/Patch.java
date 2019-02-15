@@ -1,8 +1,8 @@
-// This class was generated on Tue, 04 Sep 2018 12:15:14 PDT by version 0.1.0-dev+904328-dirty of Braintree SDK Generator
+// This class was generated on Fri, 15 Feb 2019 14:59:09 PST by version 0.1.0-dev+8fcb5f of Braintree SDK Generator
 // Patch.java
-// @version 0.1.0-dev+904328-dirty
+// @version 0.1.0-dev+8fcb5f
 // @type object
-// @data H4sIAAAAAAAC/7STwWrjMBCG7/sUg84m7Nm3hT3tQhLa0EspZCJPYhXZo47GKabk3YuUxME1pbRpj/o1Y38fM3oxqz6QKc0S1damMHcoDjee5tik2BTmP/WXw1+KVlxQx60pzaom+He7mENI3cCbR7IKyoAh+B4Cijr00IUKlWK6EIrciaU4M4X5I4L98f+/C3NDWC1a35tyiz5SCp46J1QNwVI4kKijaMr7gTyquHY3Rd8KNyP8U/CeArtWSRKk1gSKsiOFim3XUKvg2WJqgfQVeK6drVNpw3vK9Xv0Hc3gzAxblpyvU8UaEnjuv9a77bw/FB/Kcxip5+NUfKBKKpab4EnpU4Qq3dcAA2o9QjwFV04H9TKbs1Du+KkBHHd+6pf3YSR4TqaG+WZ4NjNI2VrozeZAxRShZQU58gGetu47jB4Ov14BAAD//w==
+// @data H4sIAAAAAAAC/8xTwYoUQQy9+xWhzk33iCDY4EHwpLA76ODF8ZCtTk+VVHfKVHqlkf13qa7ZGYYWFkaFPdZLJXnvJflldnMk05otqnWmMl9QPN4FusEhw6YyH2k+P95TsuKjeh5Na3aO4MPn2xuIORv47jtZBWXAGMMMEUU9Bphih0opB4QST2Ip1aYy70RwLv03lflE2N2OYTZtjyFRBn5MXqg7AVvhSKKekmm/npgnFT8e1tR74eGC/hFYS9hPm80ri+CE+rd741RjaptGmUOqPWlfsxwap0NopLev32xe7s2SQ4v4LftRSUqVBkski1VHoCgHUujYTgONCoEt5taQ2cBP563LXwe+p+X/PYaJanjUDj3Lgpfqljsq9XPCseMZhOzPUv5v7R2nEB6qJz3meOHw8lz7ex0rlek6UhHVXdA6As9k8KjnsVseYiAto/9fwytnufZpWbULox6RtVNL5HTZNez+sJLy1FJCx5RgZAUp9AGP+/4vBH97ePEbAAD//w==
 // DO NOT EDIT
 package com.paypal.orders;
 
@@ -21,7 +21,7 @@ public class Patch {
     public Patch() {}
 
 	/**
-	* The JSON pointer to the target document location from which to move the value. Required for the `move` operation.
+	* The <a href="https://tools.ietf.org/html/rfc6901">JSON Pointer</a> to the target document location from which to move the value. Required for the <code>move</code> operation.
 	*/
 	@SerializedName("from")
 	private String from;
@@ -35,7 +35,7 @@ public class Patch {
 
 	/**
 	* REQUIRED
-	* The operation to complete.
+	* The operation.
 	*/
 	@SerializedName("op")
 	private String op;
@@ -48,7 +48,7 @@ public class Patch {
 	}
 
 	/**
-	* The JSON pointer to the target document location at which to complete the operation.
+	* The <a href="https://tools.ietf.org/html/rfc6901">JSON Pointer</a> to the target document location at which to complete the operation.
 	*/
 	@SerializedName("path")
 	private String path;
@@ -61,7 +61,7 @@ public class Patch {
 	}
 
 	/**
-	* The value to apply. The `remove` operation does not require a value.
+	* The value to apply. The <code>remove</code> operation does not require a value.
 	*/
 	@SerializedName("value")
 	private Object value;
