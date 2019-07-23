@@ -63,7 +63,7 @@ public class CreateOrderExample {
 		// Construct a request object and set desired parameters
 		// Here, OrdersCreateRequest() creates a POST request to /v2/checkout/orders
 		OrderRequest orderRequest = new OrderRequest();
-		orderRequest.intent("CAPTURE");
+		orderRequest.checkoutPaymentIntent("CAPTURE");
 		List<PurchaseUnitRequest> purchaseUnits = new ArrayList<>();
 		purchaseUnits
 				.add(new PurchaseUnitRequest().amount(new AmountWithBreakdown().currencyCode("USD").value("100.00")));
