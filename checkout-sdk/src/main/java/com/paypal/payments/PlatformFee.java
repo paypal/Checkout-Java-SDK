@@ -1,8 +1,8 @@
-// This class was generated on Wed, 22 Aug 2018 20:48:41 PDT by version 0.1.0-dev+904328-dirty of Braintree SDK Generator
+// This class was generated on Wed, 11 Sep 2019 17:50:29 PDT by version 0.1.0-dev+8fcb5f of Braintree SDK Generator
 // PlatformFee.java
-// @version 0.1.0-dev+904328-dirty
+// @version 0.1.0-dev+8fcb5f
 // @type object
-// @data H4sIAAAAAAAC/7xW0W8btw9+//0VxD21gGPnlzYbkKe1DYplQ9NgywYMWZDSEu+OiE66UpKd25D/fZDuzvbFCdaiwZ4MU0eR/Pjxo/4uLruWipPiwmAonTTwnqiYFb+jMC4NnWOTTotZ8TN12z+n5JVwG9jZ4qS4rAna0d8JtCjBkkBJNAPlmoa9Z2dn6Wwp7pYEK0qnEGoMwB7Qe6cYA2lYc6gh1ARB0HpUKcYczl0ABE8tCgZKF7F3JjvsfAeGKijFNfkCugskFg20JL4lFXhFc5gkm3JgD4YbTlexBa9cS4BW57TMGrvHs3PCFefLsWvIBiid5IM2iqrRE0TLYV7Mijci2PUoH86KXwj1R2u64qRE4ykZPkcW0hvDhbiWJDD54uRq058PzlK33xhsXLRh0p6Nab9JKoqQVV2ur/8u541QskWrGM0unDPwUdWAHhCWaNAq6tvbV6wjfVV9QeKT5fkgbKv9+saMb5TTNCnz4cl+tVehFqIDVaOgCiRw9uvHg9dH//9+i0PyvX6x0E75BdtAlWC6YKFZSIWFkA+L8eOD9LFfvBxIq8kGLpl87vr40TcCYqMx97N/RWWFJk7RGC37KOSTGaxrVjU0XNUBlnTyZzw8fKWiyb/U/zPc/3tjIWORJtjJWFqq1PAtwaefLv741IOAQmBdgNC1rNCYDkrpqYNm3l+6GG99EAM0KW7QbDwej3V5froTy8el5hXrPKrBQahd9Gh1qP3j4RZjhe+H6ZQBfLCxWZKAKzeJtAYV+WEeJgyZgSeCq3ej7V0iwtfS5jmYcb3DjQ+UdMYGeIv+EcVusaMpRUbLPkU0BWTjNxLWjFevawdCing10LyMVvusHmU0JRvjBzHUJL20bnyzfHoHt9atbdKQLI4ph+cTxSdVwzDZcMN6qhg71kcWWFwaVtu57smPbQtKKGv/spugs+iLgTMbxOmo0ipy4GPbOgkQPYFCTx5epHtoXs3hrSDbS0k7Z0uafqVcYHeB5iWsa5IBJqAG2dyg1kLeJ+EdI99w3k5p8nCFbFLl3wrqFyrPJKcJug9P9hFORYvFXh74L9J9hTD4DBO8NE7dfo4u0O4g+yDOVr3l3IVRwBa7dvitTR347jVsJN9n2UBj3Do1kEon/XI/Oj5+6iss065Ine5jpPntA/wwBN1awHNl5/CjW9OKZJa9KrIkWQxRKWoTcxq84yY2YMhWoe6JZafVp4YeHe+mPjxVMCTUYEUybpskhhaizSDpL80S6I592OjkQ5j/G/rsMHhCnql9nzr9eOS5EDg7HddZ0hho0N+STgClR2ZS9LD1QKXyK2eQ+0RBm9ZHakEa0eE9x6Lzq5VpgP2hnwehHGFpOiCrpMuNze8oaMW1whRQOlilgm1IaSRhfnWUfKPvxYFsasqwiHw04Vmm9vr++v5//wAAAP//
+// @data H4sIAAAAAAAC/6xW328bNwx+319B3NMGuHGWNhuQp3UNhv3A0mDLBgxZkNISz0dEJ11Jyc5t6P8+SHfn2LGDtUifDkeJIvnx4yf9W131HVVnVecw1kHa25qomlV/ojAuHF1ge2D1F+rHhWpWnZMa4S5y8NVZddUQTLshCHQo0ZNATTQDE9qWVTn4WV5bSLgjwSXlVYgNRmAFVA2GMZKFNccGYkMQBb2iyTGO4CJEQFDqUDBSPog1uOKwtQ8cLaGW0JYD6D6SeHTQkWhHJvKKjmAn2ZwDKzhuOR/FHtSEjgC9LWm5NfaHswvCSy6HY9+Sj1AHKQtdEtOgEiTP8aiaVa9FsB8QP55VvxHat9711VmNTikb3icWshvDpYSOJDJpdXa96dWvwVO/3yRsQ/Jxpz0b036TTBIhb/pS37Cv5I1Qs0dvGN02nDPQZBpABYQFOvSGhvYOFdtEn1RflPRkeRqF/XK/vinjWxPsLgsfr+xXex0bIXphGhQ0kQR++v3ti1cnX3/7gEP2vflyboPROftIS8F8wNyykIlzIY3zafOLvFnnX42kteQj10xauj5teiYgPjn3Yfa/qKzQpV00Jss+CmVlBuuGTQMtL5sICzr7Ox0fvzTJlS8Nf46Hv9ceChZ5goNMpeVKHd8RvPv58q93AwgoBD5EiH3HBp3roZaBOuiOhkPn06mPYoAlwy26jcfhWFcX51uxNC0sr9iWUY0BYhOSorex0cPh5lOFP4zTKSP44FO7IIFQbxLpHBrScR52GDIDJYLrN5PtTSbCp9LmczDjZosbHfZEtwvUQ9K9vfZAkmI+SBJLEdnpRsRayiLmI6ybAEKGeDUSvU7eatGPOrmandNRDi3JIK4b3yKgGuDOh7XPKlLkMefw+WTxqQmhFtntFF8st2itkOpBEHInxeNAX/6HLBQfGH1Ghi1cMHfvU4i0TTSNEvxysFyEOA3YfNsOf3QQA3zzCjaSpIXW6FxYk4UF1UGGy+fk9PSpXVhnLctYDjEyv4YA341BHyygvPRH8GNY04pkVryW5EnKsKIx1OVbrcV7blMLjvwyNsMI+N3qczdPTrdTH69SjBk1WJFMapiH1UPyBST7sVkC3bPGzRw/hvmZjPlIYZ24e8t2hzy79n3qXGJ/ObwF8jVzPsltngBoUe/IZoDyIygrTnzwQGPKLTzKUaagz/KWW5CUpvcGiy2vKqYR9sd+CkIlwsL1QN5IXxpb7nnoJHTCFFF6WOWCfcxpfI9KL0+yb9L8jgrZMVgahVKTe/b7ZVStmw9f/AcAAP//
 // DO NOT EDIT
 package com.paypal.payments;
 
@@ -38,12 +38,12 @@ public class PlatformFee {
 	* The details for the merchant who receives the funds and fulfills the order. The merchant is also known as the payee.
 	*/
 	@SerializedName("payee")
-	private MerchantBase payee;
+	private PayeeBase payeeBase;
 
-	public MerchantBase payee() { return payee; }
+	public PayeeBase payeeBase() { return payeeBase; }
 	
-	public PlatformFee payee(MerchantBase payee) {
-	    this.payee = payee;
+	public PlatformFee payeeBase(PayeeBase payeeBase) {
+	    this.payeeBase = payeeBase;
 	    return this;
 	}
 }

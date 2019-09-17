@@ -2,9 +2,12 @@
 .idea/
 *.class
 .gradle
-
+*.iml
 # Created by https://www.gitignore.io/api/java
 
+#Build Files
+build/
+#
 ### Java ###
 # Compiled class file
 *.class

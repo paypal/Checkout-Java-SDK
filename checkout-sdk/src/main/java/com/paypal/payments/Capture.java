@@ -1,8 +1,8 @@
-// This class was generated on Wed, 22 Aug 2018 20:48:41 PDT by version 0.1.0-dev+904328-dirty of Braintree SDK Generator
+// This class was generated on Wed, 11 Sep 2019 17:50:29 PDT by version 0.1.0-dev+8fcb5f of Braintree SDK Generator
 // Capture.java
-// @version 0.1.0-dev+904328-dirty
+// @version 0.1.0-dev+8fcb5f
 // @type object
-// @data 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
+// @data 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
 // DO NOT EDIT
 package com.paypal.payments;
 
@@ -34,6 +34,19 @@ public class Capture {
 	}
 
 	/**
+	* The details of the captured payment status.
+	*/
+	@SerializedName("status_details")
+	private CaptureStatusDetails captureStatusDetails;
+
+	public CaptureStatusDetails captureStatusDetails() { return captureStatusDetails; }
+	
+	public Capture captureStatusDetails(CaptureStatusDetails captureStatusDetails) {
+	    this.captureStatusDetails = captureStatusDetails;
+	    return this;
+	}
+
+	/**
 	* The date and time, in [Internet date and time format](https://tools.ietf.org/html/rfc3339#section-5.6). Seconds are required while fractional seconds are optional.<blockquote><strong>Note:</strong> The regular expression provides guidance but does not reject all invalid dates.</blockquote>
 	*/
 	@SerializedName("create_time")
@@ -43,6 +56,19 @@ public class Capture {
 	
 	public Capture createTime(String createTime) {
 	    this.createTime = createTime;
+	    return this;
+	}
+
+	/**
+	* The API caller-provided external ID. Used to reconcile API caller-initiated transactions with PayPal transactions. Appears in transaction and settlement reports.
+	*/
+	@SerializedName("custom_id")
+	private String customId;
+
+	public String customId() { return customId; }
+	
+	public Capture customId(String customId) {
+	    this.customId = customId;
 	    return this;
 	}
 
@@ -99,7 +125,7 @@ public class Capture {
 	}
 
 	/**
-	* An array of related [HATEOAS links](/docs/api/overview/#hateoas-links).
+	* An array of related [HATEOAS links](/docs/api/reference/api-responses/#hateoas-links).
 	*/
 	@SerializedName(value = "links", listClass = LinkDescription.class)
 	private List<LinkDescription> links;
@@ -147,19 +173,6 @@ public class Capture {
 	
 	public Capture status(String status) {
 	    this.status = status;
-	    return this;
-	}
-
-	/**
-	* The details of the captured payment status.
-	*/
-	@SerializedName("status_details")
-	private StatusDetails statusDetails;
-
-	public StatusDetails statusDetails() { return statusDetails; }
-	
-	public Capture statusDetails(StatusDetails statusDetails) {
-	    this.statusDetails = statusDetails;
 	    return this;
 	}
 

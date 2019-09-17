@@ -1,8 +1,8 @@
-// This class was generated on Wed, 22 Aug 2018 20:48:41 PDT by version 0.1.0-dev+904328-dirty of Braintree SDK Generator
+// This class was generated on Wed, 11 Sep 2019 17:50:29 PDT by version 0.1.0-dev+8fcb5f of Braintree SDK Generator
 // Authorization.java
-// @version 0.1.0-dev+904328-dirty
+// @version 0.1.0-dev+8fcb5f
 // @type object
-// @data H4sIAAAAAAAC/+xabW/juBH+3l8x8BW4NWBb6b7k7vLN3d3Dpb1sgsRboEiDmCbHFhuK1JEjO2px/70gadmWZF9yXTvbAv4QBBqOrHlmHs6LxH93RmWOnbPOsKDUWPkvRtLoTq/zN2Ylmyj8xDK/3Ol1/orl+uIDOm5lHpTPOqMUgS1/AAXkrMxQE5Bl2jHulQadXmdoLSvj4056nWtk4lKrsnM2ZcqhF/xSSItiJbiyJkdLEl3n7HZl6IXRWLYNZJkpNNXMXInaxvLCWtS8BKYFRD2YGgsMplIzzSVTm9b3wBU8BeaAwYQppjmCsSucosD94XNkpZ61AVYm33MjsIazudKGe0upRezzlFnGCS2c31z2377+03drR/h7714lwnCXSE04s4EJiZAWOSUWHSWVct8ru6QLlDICKVCTnEp0QBuu/V0eIVs0HKILpX7tPemVOVNF3RuVpO2FsNKDRSp5CpmcpQQTPPtHcXLyhhcq/Md4pWS8GmoIvkAb2LGE5pEq+YAw/svV38fRCcwiaENAZS45U6qEqY3cYWoQfzSpfrXxDBDIZcbU6o7tzxp9+rDxLFdMhJxLgcJbaIBSUzimBaVu++OSCuGPxoY42aXzQRfZBC2Y6cqQXDGObrkhagzpgUOE2/eV7L0nwu+lzT6YcfcMbnCLjPCeZNbYLzV5myeCEYbE4DV6IDXcnmtCq5Hqa95DGaO7VylR7s6ShIxRbiCRpgNjZ0lKmUrslL958+aHbxyG4PbfDU67A7hBbrRwIZarSCxSqXCDOOA2tExeY9NEGf7wS2EIN6PsyBo9i5JPhip2J5tyGIXozwrFLOBjbtE5z7rcGk8oB7NCipDiJgWBMOgCsy3+EzkBUwqknjMlRXDGim5Ng74wIT5z/+NjLiPl2nFurx1j/f8caylq4Q2X7YhesfKKqf4MNVpGKOD8Q8hktLVHGbyQ6XpuJMf7JoRNcRvK8OocfDFB218GTAA+enayEBh/b5W+I0TpwFiBdgDDPEdmnWf0xFAa4OesRPut2+xsIJWOjI2NkNfBjEnlYqFZ3QMWOco5uj2762epH2ATd8txSuoHV/NZJam7a6iBebt8GbOoQuBvfxqOPl4ObyDcUlUplsvEzNHOJS6Sb1JGaJjrB5VmZTrdfxeHmgeNWp5aydoUyFBI5rsK9JGMrQsZX/4zSas6ji5kK/ZCbE4tTmsIloItfbbJcoWEQMzOkODz9c8DGBnI2AMurY+x8jTvefWJ1HElQ0qNgIUM5JUObj9fn8MIs9zf0Y/pmFA8mZFP33130g0cGIBvfnKLfjtxnwr1zOd8rgoRHzr+47gH41fjXtgP4+4YVj2zG4RkOvZYxyBjs/uAJVQs81iNDnOP3zyBUb5/WrogYox4mA+g84HTFMQvFLjAphb/NqW/xcCeH4AETqVGAZMSbq9/fA+vT96erkOwWCzWAbBT7v+8xoAeqTtYbvXJclLwHloS48Xwe041wC9FbeQ/jUZXFQ1XdZt2kPeFEFhUNfPj9ZaJLzg3GOizvA/fkxvl3Q/ff79qXd52q0nJoZ2jC8OvroopWwbPE73QLJvIWWEKp0oQtRA7zJgmyZ3Py1XMfUeEcBuS//XSQtfgENMs2MackzPtK7VL/L39ClLzcvDoYXQPUaBueIoZa8fCVfJ1OFaidkQ28zQYu0/2r8uOmfjGbcvbESFkbCnPCbN6QW2v1Y3fr0eHSsHlFPyjtpip1GW9slSS3dXeFZN+dPsyQwcHZ4UjCJ1raOJnTGoXG9pN/S8s901ouvwNaLpsQltK9gPN6PBKKjPx5cCBIO7iV6gKgUV1btXlh+TVbsty1CK+SWmYVls4pG27kvnUsplPbdfojCqWDfDawq3LX8OHspUz5NZMMdTgFw6Qg/czGASNPe+IC98e7ei02l3WUz2+7zq50YSP1EfNjZB6BmErv8Ab5onUzJYfl4+tGd9a2tbqa0LdNjsW+4tCkcwLmxuHsHrDcsGkgo+PhNr5FAGvLs4vPnbhilmCS41nvl/PGPnYre9B59gM4c9GSHRPNjWvT96+675Qc0bNzpqebqr/a/+MFuYMAvvAm/UsT5zuxxN3z8gZ2tQ/xsTrQ2avS427y6/R2Ci/lWR/5Xetv+ccs4tvOaP0hpite3pT2mCeAZbnqozzdDQVwscDBI+CaY7uW/h8fe564PxPhCV/vTGHh88og5epPLkf8a3euLOBtLX6NepjvsO8w9p199w5JQ4ZN+1ppbFwnFmOM8txZjnOLMeZ5TizHGeW48xynFmOM8txZjnOLAeaWXZmJEmqkZKWknZOigOJX957krhBpdDClTUUP4lt+QAUVO7zTZWNb0FbVrcgwDkqv3PXemCmU7Qomp9b48kWaBkWvshdoOUp09T4kJazMmdqwE2WFC5Z4ITluUuyPE8c8sJKKpNoZ3/9/O7hy7aQLi8I7zkjnBnb6nO3Le9OetzoOA669QFJbubBh9XRn91nkQ+V6RwxKuq4VqI6lnMtpIfqYJEipdiyGKQDVHImJyocRIMYsw3ODF5qdz4flWd3XPr656+KXGw9ClqXH48H/u8eD7z79Q//AQAA//8=
+// @data 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
 // DO NOT EDIT
 package com.paypal.payments;
 
@@ -34,6 +34,19 @@ public class Authorization {
 	}
 
 	/**
+	* The details of the authorized payment status.
+	*/
+	@SerializedName("status_details")
+	private AuthorizationStatusDetails authorizationStatusDetails;
+
+	public AuthorizationStatusDetails authorizationStatusDetails() { return authorizationStatusDetails; }
+	
+	public Authorization authorizationStatusDetails(AuthorizationStatusDetails authorizationStatusDetails) {
+	    this.authorizationStatusDetails = authorizationStatusDetails;
+	    return this;
+	}
+
+	/**
 	* The date and time, in [Internet date and time format](https://tools.ietf.org/html/rfc3339#section-5.6). Seconds are required while fractional seconds are optional.<blockquote><strong>Note:</strong> The regular expression provides guidance but does not reject all invalid dates.</blockquote>
 	*/
 	@SerializedName("create_time")
@@ -43,6 +56,19 @@ public class Authorization {
 	
 	public Authorization createTime(String createTime) {
 	    this.createTime = createTime;
+	    return this;
+	}
+
+	/**
+	* The API caller-provided external ID. Used to reconcile API caller-initiated transactions with PayPal transactions. Appears in transaction and settlement reports.
+	*/
+	@SerializedName("custom_id")
+	private String customId;
+
+	public String customId() { return customId; }
+	
+	public Authorization customId(String customId) {
+	    this.customId = customId;
 	    return this;
 	}
 
@@ -86,7 +112,7 @@ public class Authorization {
 	}
 
 	/**
-	* An array of related [HATEOAS links](/docs/api/overview/#hateoas-links).
+	* An array of related [HATEOAS links](/docs/api/reference/api-responses/#hateoas-links).
 	*/
 	@SerializedName(value = "links", listClass = LinkDescription.class)
 	private List<LinkDescription> links;

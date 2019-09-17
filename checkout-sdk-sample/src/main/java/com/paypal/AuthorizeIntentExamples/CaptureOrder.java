@@ -1,9 +1,5 @@
 package com.paypal.AuthorizeIntentExamples;
 
-import java.io.IOException;
-
-import org.json.JSONObject;
-
 import com.braintreepayments.http.HttpResponse;
 import com.braintreepayments.http.serializer.Json;
 import com.paypal.PayPalClient;
@@ -11,6 +7,9 @@ import com.paypal.orders.OrderRequest;
 import com.paypal.payments.AuthorizationsCaptureRequest;
 import com.paypal.payments.Capture;
 import com.paypal.payments.LinkDescription;
+import org.json.JSONObject;
+
+import java.io.IOException;
 
 public class CaptureOrder extends PayPalClient {
 

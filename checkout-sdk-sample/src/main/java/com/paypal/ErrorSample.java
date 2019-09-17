@@ -2,11 +2,11 @@ package com.paypal;
 
 import com.braintreepayments.http.HttpResponse;
 import com.braintreepayments.http.exceptions.HttpException;
-import org.json.JSONObject;
-import java.io.IOException;
-import java.util.*;
-
 import com.paypal.orders.*;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.util.ArrayList;
 
 public class ErrorSample extends PayPalClient {
 

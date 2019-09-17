@@ -1,14 +1,13 @@
 package com.paypal;
 
-import java.io.IOException;
-
-import org.json.JSONObject;
-
 import com.braintreepayments.http.HttpResponse;
 import com.braintreepayments.http.serializer.Json;
 import com.paypal.AuthorizeIntentExamples.CreateOrder;
 import com.paypal.orders.Order;
 import com.paypal.orders.OrdersGetRequest;
+import org.json.JSONObject;
+
+import java.io.IOException;
 
 public class GetOrder extends PayPalClient {
 

@@ -69,50 +69,7 @@ buildscript {
         archives sourcesJar
         archives javadocJar
     }
-    
-     uploadArchives {
-        repositories.mavenDeployer {
-            beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
-            repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
-                authentication(userName: ossrhUsername, password: ossrhPassword)
-            }
-            snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots/") {
-                authentication(userName: ossrhUsername, password: ossrhPassword)
-            }
 
-            pom.project {
-                name 'checkout-sdk'
-                groupId  'com.paypal.sdk'
-                artifactId 'checkout-sdk'
-                version '1.0.1'
-                packaging 'jar'
-                description 'PayPal SDK for integrating with the Checkout REST APIs'
-                url 'https://github.com/paypal/Checkout-Java-SDK.git'
-
-                scm {
-                    url 'https://github.com/paypal/Checkout-Java-SDK.git'
-                    connection 'scm:git:git://github.com/paypal/Checkout-Java-SDK.git'
-                }
-
-                licenses {
-                    license {
-                        name 'PayPal SDK License'
-                        url 'https://github.com/paypal/Checkout-Java-SDK/blob/master/LICENSE'
-                        distribution 'repo'
-                    }
-                }
-
-                developers {
-                    developer {
-                        id 'DL-PP-JAVA-SDK'
-                        name 'DL-PP-JAVA-SDK'
-                        email 'dl-paypal-checkout-api@paypal.com'
-                    }
-                }
-            }
-        }
-    }
-    
 }
  project("checkout-sdk-sample") {
      apply plugin: 'java'

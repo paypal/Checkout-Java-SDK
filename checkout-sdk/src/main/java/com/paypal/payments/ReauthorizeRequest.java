@@ -1,8 +1,8 @@
-// This class was generated on Wed, 22 Aug 2018 20:48:41 PDT by version 0.1.0-dev+904328-dirty of Braintree SDK Generator
+// This class was generated on Wed, 11 Sep 2019 17:50:29 PDT by version 0.1.0-dev+8fcb5f of Braintree SDK Generator
 // ReauthorizeRequest.java
-// @version 0.1.0-dev+904328-dirty
+// @version 0.1.0-dev+8fcb5f
 // @type object
-// @data H4sIAAAAAAAC/6xUYWvcRhD93l8xiBZakC07aQj1txBTcEsTE7uF4Jp6bnd0GrraVWZnnajF/z2sdLo73V04AvmmHc3OzHvz3v5f3PYdFRfFO8KkTRD+j+AdfUgUtSiLv1AYF47eYJuTirL4nfrN4ZKiEe6Ug5+XiIAe1icL19hfowM0JiSv0GHfktcSFj1cXZ7CbQDyMQmBNqhQJ28joBBEZecAH5FdHqME2RoTpzqAtZIAawT2rIwOtBGiE4s9NMEHgY6EgwX61LFQPIX3IYFB/4V6wbsegjcEtYQWLPYR6pAENMCzX07/Tmdnz81CquGDdo5XNTw/G+80+Eiggj7mthYi55raEFhUglAP30F4yT7TsxoFM6El9CFBm6KCEcrpc0qnWdlHJbS52AYM++Xh0puLR1C82qZmq5tGcjU0GAHB08c5vQMgIRrQH2lwcAMHEY6LCAKpyws4P3/xwxepIwvYZo2V4IPmdPpkKEc9sM9ExoH371++gD9vLo/MeJO6LojGURC54cNY/QFk9Ah0KNiSkpwWZfFKBPvRUGdl9oN9611fXNToIuXAh5R1sA5cS+hIlCkWF3drK/4RPPX75hs7zyy4Ds2NeNsQmCRC3vSAfqJk4BChZo/eDCbJykQzqi0m08Cw1gU6zJTnva5WYBN9O3xRhf1yH+A08j8mWJrh3P2zD/duNLxpUNDkx+Dq5u3Jz8/OX26IyHfvf6xsMLFir7SUwWeVZSGjlVDUako+ycmx+ml8j9iSV66Z4qCBKemrGFFJO4T45NxTeZSVR3RpzsYU2Wdh+FPCx4ZNAy0vG4UFXYyiTm5b4o5XNs+2UFqSDOpYQctIHf9L8PDb9fuHkYT8HA+W6js26FwPtYzaQbeyUTVV3ekBlgy36NY3Dve6fXO51SumheVHtmTzhAG0CSmit9rEw+2qCeGvQYY9yYp88KldkGTbT4N0Dg3FlSFmCikhEsHd6yn2Ogvha2XzLZRx/3T/9N1nAAAA//8=
+// @data H4sIAAAAAAAC/6xVYWvcRhD93l8xiBZakC07aQj1txBTcEudI74Wgmvqud3RaclqV56ZdaIW//ey0ul8Ol8wgXy7Hc3OzHv73tx/xbLvqDgr3hMmbSK7fwne010i0aIs/kJ2uPJ0iW1OKsrid+ofD+ckhl2nLoZ5CQEMsD1ZWGC/QA9oTExBocO+paAlrHq4OD+GZQQKkphAG1SoU7ACyASiznvAe3Q+j1EC74yJUx3AWonBqYALTh160IaJjiz20MQQGTpiFy3Q584xyTF8iAkMhi/Ui8H3EIMhqDm2YLEXqGNi0Agvfjn+O52cvDQrroYftHe8qOHlyXinwXsCZQyS21oQl2tqQ2BRCWI9/I7s1i5kejajYCa0hD4maJMoGKacPqd0mtUFUUKbiz2CcWF9uPTjxWdQvNmlZqebCvkaGhRACPRpTu8AiIkG9M80OPgCBxGODxEZUpcf4PT01Q9fpI4sYJs1VkKImtPps6EcDeBCJlIG3r9//Qr+vDp/Zsar1HWRVUZB5Ia3Y/Vb4NEj0CFjS0o8lfLRfLxLUWm3oijHsB4jl1HpbAxXu3FYNk62dZ2AScwU1PcDFBlnITtQsUDWQAxJCAwKTWxX+/2LsnjDjP1o85Myu9S+C74vzmr0Qjlwl7I6t4EFx45YHUlxdr1dEH/EQP3TlTDyMVsM29B8PSwb2kAyPWCYHmqAg1C7gMEM1s1+QTN6QJJpYBDbCj1mIWS1bYRhEx1/M3yi7ML6KcBp5H9MtDTDuf/lKdzrcQ2ZBhlNXlEXV++Ofn5x+vqRiHz35sfKRiOVC0prHtxfWcdktGISrabko5ws1U/jlnSWgrrakQzKnJK+ihHltEdISN4/lM+yco8+zdmYIk9ZGL6U8KlxpoHWrRuF1eSA5Hdt4t1m+WSzKq2JB3VsoGWk3n0kuP1t8eF2JCH/SQxG7ztn0Pseah61g36yxFR1rwdYMq5Fv71xuNfy8nynl6SVdffOks0TRtAmJsFgtZHD7aoJ4a+Rh3fiDfkQUrsizstoGqTzaEg2hpgppAQhguu3U+xtFsLXyuZbKOPm4ebhu/8BAAD//w==
 // DO NOT EDIT
 package com.paypal.payments;
 
@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.ArrayList;
 import com.braintreepayments.http.annotations.*;
 /**
- * Reauthorizes an authorized PayPal account payment, by ID. To ensure that funds are still available, reauthorize a payment after its initial three-day honor period expires. You can reauthorize a payment only once from days four to 29.<br/><br/>If 30 days have transpired since the date of the original authorization, you must create an authorized payment instead of reauthorizing the original authorized payment.<br/><br/>A reauthorized payment itself has a new honor period of three days.<br/><br/>You can reauthorize an authorized payment once for up to 115% of the original authorized amount, not to exceed an increase of $75 USD.<br/><br/>Supports only the `amount` request parameter.
+ * Reauthorizes an authorized PayPal account payment, by ID. To ensure that funds are still available, reauthorize a payment after its initial three-day honor period expires. You can reauthorize a payment only once from days four to 29.<br/><br/>If 30 days have transpired since the date of the original authorization, you must create an authorized payment instead of reauthorizing the original authorized payment.<br/><br/>A reauthorized payment itself has a new honor period of three days.<br/><br/>You can reauthorize an authorized payment once for up to 115% of the original authorized amount, not to exceed an increase of $75 USD.<br/><br/>Supports only the `amount` request parameter.<blockquote><strong>Note:</strong> This request is currently not supported for Partner use cases.</blockquote>
  */
 @Model
 public class ReauthorizeRequest {
