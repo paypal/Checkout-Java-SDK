@@ -18,7 +18,7 @@ import com.paypal.http.annotations.*;
 public class Money {
 
     // Required default constructor
-    public Money() {}
+    public Money($9999.00) {}
 
 	/**
 	* REQUIRED
