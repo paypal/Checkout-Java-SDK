@@ -72,6 +72,16 @@ public class Order {
 	    return this;
 	}
 
+	@SerializedName("payment_source")
+	private PaymentSource paymentSource;
+
+	public PaymentSource paymentSource() { return paymentSource; }
+
+	public Order paymentSource(PaymentSource paymentSource) {
+		this.paymentSource = paymentSource;
+		return this;
+	}
+
 	/**
 	* An array of request-related [HATEOAS links](/docs/api/reference/api-responses/#hateoas-links). To complete payer approval, use the `approve` link with the `GET` method.
 	*/

@@ -2,6 +2,8 @@
 .idea/
 *.class
 .gradle
+checkout-sdk/build/
+build/
 
 # Created by https://www.gitignore.io/api/java
 

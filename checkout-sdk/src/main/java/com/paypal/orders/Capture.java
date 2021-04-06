@@ -175,4 +175,19 @@ public class Capture {
 	    this.updateTime = updateTime;
 	    return this;
 	}
+
+	/**
+	 * An object that provides additional processor information for a direct credit card transaction.
+	 */
+	@SerializedName("processor_response")
+	private ProcessorResponse processorResponse;
+
+	public ProcessorResponse processorResponse() {
+		return processorResponse;
+	}
+
+	public Capture processorResponse(ProcessorResponse processorResponse) {
+		this.processorResponse = processorResponse;
+		return this;
+	}
 }

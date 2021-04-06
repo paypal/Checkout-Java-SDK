@@ -21,55 +21,15 @@ public class Card {
     public Card() {}
 
 	/**
-	* The portable international postal address. Maps to [AddressValidationMetadata](https://github.com/googlei18n/libaddressinput/wiki/AddressValidationMetadata) and HTML 5.1 [Autofilling form controls: the autocomplete attribute](https://www.w3.org/TR/html51/sec-forms.html#autofilling-form-controls-the-autocomplete-attribute).
-	*/
-	@SerializedName("billing_address")
-	private AddressPortable addressPortable;
-
-	public AddressPortable addressPortable() { return addressPortable; }
-
-	public Card addressPortable(AddressPortable addressPortable) {
-	    this.addressPortable = addressPortable;
-	    return this;
-	}
-
-	/**
 	* The card network or brand. Applies to credit, debit, gift, and payment cards.
 	*/
-	@SerializedName("card_type")
+	@SerializedName("type")
 	private String cardType;
 
 	public String cardType() { return cardType; }
 
 	public Card cardType(String cardType) {
 	    this.cardType = cardType;
-	    return this;
-	}
-
-	/**
-	* REQUIRED
-	* The year and month, in ISO-8601 `YYYY-MM` date format. See [Internet date and time format](https://tools.ietf.org/html/rfc3339#section-5.6).
-	*/
-	@SerializedName("expiry")
-	private String expiry;
-
-	public String expiry() { return expiry; }
-
-	public Card expiry(String expiry) {
-	    this.expiry = expiry;
-	    return this;
-	}
-
-	/**
-	* The PayPal-generated ID for the card.
-	*/
-	@SerializedName("id")
-	private String id;
-
-	public String id() { return id; }
-
-	public Card id(String id) {
-	    this.id = id;
 	    return this;
 	}
 
@@ -87,42 +47,28 @@ public class Card {
 	}
 
 	/**
-	* The card holder's name as it appears on the card.
-	*/
-	@SerializedName("name")
-	private String name;
-
-	public String name() { return name; }
-
-	public Card name(String name) {
-	    this.name = name;
-	    return this;
-	}
-
-	/**
-	* REQUIRED
-	* The primary account number (PAN) for the payment card.
-	*/
-	@SerializedName("number")
-	private String number;
-
-	public String number() { return number; }
-
-	public Card number(String number) {
-	    this.number = number;
-	    return this;
-	}
-
-	/**
 	* The three- or four-digit security code of the card. Also known as the CVV, CVC, CVN, CVE, or CID.
 	*/
-	@SerializedName("security_code")
-	private String securityCode;
+	@SerializedName("brand")
+	private String brand;
 
-	public String securityCode() { return securityCode; }
+	public String brand() { return brand; }
 
-	public Card securityCode(String securityCode) {
-	    this.securityCode = securityCode;
+	public Card brand(String brand) {
+	    this.brand = brand;
 	    return this;
+	}
+
+	/**
+	 * Results of Authentication such as 3D Secure.
+	 */
+	@SerializedName("authentication_result")
+	private AuthenticationResponse authenticationResponse;
+
+	public AuthenticationResponse authenticationResponse() { return authenticationResponse; }
+
+	public Card authenticationResponse(AuthenticationResponse authenticationResponse) {
+		this.authenticationResponse = authenticationResponse;
+		return this;
 	}
 }
