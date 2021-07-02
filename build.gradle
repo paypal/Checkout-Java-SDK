@@ -35,7 +35,7 @@ buildscript {
      }
 
      dependencies {
-         compile ("com.paypal:paypalhttp:1.0.1")
+         compile ("com.paypal:paypalhttp:1.0.2")
 		 testCompile group: 'org.testng', name: 'testng', version: '6.9.13.6'
          testCompile "com.github.tomakehurst:wiremock:2.4.1"
      }
