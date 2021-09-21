@@ -44,7 +44,7 @@ public class PayPalHttpClient extends HttpClient {
 
 	private void addFPTIHeaders(HttpRequest request) throws IOException {
 		request.header("sdk_name", "Checkout SDK");
-		request.header("sdk_version", "1.0.4");
+		request.header("sdk_version", "1.0.5");
 		request.header("sdk_tech_stack", "Java " + System.getProperty("java.version"));
 		request.header("api_integration_type", "PAYPALSDK");
 	}

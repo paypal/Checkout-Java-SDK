@@ -8,7 +8,7 @@ buildscript {
  allprojects {
      apply plugin: 'java'
      group 'com.paypal.sdk'
-     version '1.0.4'
+     version '1.0.5'
      sourceCompatibility = 1.8
      targetCompatibility = 1.8
      repositories {
@@ -78,7 +78,7 @@ buildscript {
                      name 'checkout-sdk'
                      groupId 'com.paypal.sdk'
                      artifactId 'checkout-sdk'
-                     version '1.0.4'
+                     version '1.0.5'
                      packaging 'jar'
                      description 'PayPal SDK for integrating with the Checkout REST APIs'
                      url 'https://github.com/paypal/Checkout-Java-SDK.git'
