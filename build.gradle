@@ -8,7 +8,7 @@ buildscript {
  allprojects {
      apply plugin: 'java'
      group 'com.paypal.sdk'
-     version '1.0.3'
+     version '1.0.5'
      sourceCompatibility = 1.8
      targetCompatibility = 1.8
      repositories {
@@ -35,7 +35,7 @@ buildscript {
      }
 
      dependencies {
-         compile ("com.paypal:paypalhttp:1.0.1")
+         compile ("com.paypal:paypalhttp:1.0.3")
 		 testCompile group: 'org.testng', name: 'testng', version: '6.9.13.6'
          testCompile "com.github.tomakehurst:wiremock:2.4.1"
      }
@@ -78,7 +78,7 @@ buildscript {
                      name 'checkout-sdk'
                      groupId 'com.paypal.sdk'
                      artifactId 'checkout-sdk'
-                     version '1.0.3'
+                     version '1.0.5'
                      packaging 'jar'
                      description 'PayPal SDK for integrating with the Checkout REST APIs'
                      url 'https://github.com/paypal/Checkout-Java-SDK.git'
