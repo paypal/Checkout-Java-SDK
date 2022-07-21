@@ -5,6 +5,8 @@
 .classpath
 .project
 .settings
+gradle.properties
+**/*.gpg
 build/
 
 # Created by https://www.gitignore.io/api/java
