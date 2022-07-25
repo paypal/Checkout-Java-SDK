@@ -1,4 +1,7 @@
-# PayPal Checkout Java SDK v2
+# Deprecation Notice:
+This SDK is deprecated; you can continue to use it, but no new features or support requests will be accepted. A direct [REST API integration](https://developer.paypal.com/docs/api/orders/v2/) is recommended. Review the [docs on authorization](https://developer.paypal.com/api/rest/authentication/) for authenticating requests with the REST API.
+
+## PayPal Checkout Java SDK v2
 
 ![Home Image](homepage.jpg)
 
